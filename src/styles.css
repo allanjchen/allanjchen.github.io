@@ -1,9 +1,10 @@
 /*Global Theme Control Variables*/
 :root {
-  --main-bg-color: #121212;
-  --main-text-color: #FFFFFF;
-  --highlight-text-color: #03DAC6;
-  --primary-feature-color: #BB86FC;
+  --main-bg-color: #1F2833;
+  --title-text-color: #66FCF1;
+  --main-text-color: #C5C6C7;
+  --highlight-text-color: #B29B52;
+  --primary-feature-color: #45A29E;
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
@@ -18,21 +19,21 @@ body {
     padding: 0;
 }
 h1 {
-  color: var(--main-text-color);
-  font-size: 5em;
+  color: var(--title-text-color);
+  font-size: 10em;
 }
 p {
   color: var(--main-text-color);
-  font-size: 1em
+  font-size: 2.5em
 }
 
 .slide_button {
-  color: #FFFFFF;
+  color: var(--main-text-color);
   border: 2px solid var(--highlight-text-color);
-  border-radius: 0px;
+  border-radius: 15px;
   padding: 18px 36px;
   display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   cursor: pointer;
   box-shadow: inset 0 0 0 0 var(--highlight-text-color);
   --transition-time: 0.3s; /* set transition times */
@@ -45,7 +46,7 @@ p {
 }
 
 header {
-  background: var(--main-bg-color);
+  background-color: var(--main-bg-color);
   overflow: hidden;
 }
 .container {
@@ -72,13 +73,12 @@ nav ul {
 nav li {
   display: inline-block;
   margin-left: 50px;
-  
   position: relative;
 }
 
 nav a {
   padding: none;
-  font-size: 16px;
+  font-size: 20px;
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
   border: none;
@@ -117,14 +117,15 @@ nav a:hover::after {
 
 .scroll-container-sub {
   opacity: 0;
-  transition: opacity 0.25s ease-in-out; 
-  background-color: var(--primary-feature-color);
+  transition: opacity 0.5s ease-in-out; 
+  background-color: var(--main-bg-color);
   color:var(--main-text-color);
   border: 2px solid var(--highlight-text-color);
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+  padding: 10vw 10vh;
 
 }
 
