@@ -13,6 +13,9 @@
 
 body {
     background-color:var(--main-bg-color);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 h1 {
   color: var(--main-text-color);
@@ -46,6 +49,7 @@ header {
   overflow: hidden;
 }
 .container {
+  position: sticky;
 	width: 95%;
   margin: 25px 0;
 }
@@ -98,4 +102,32 @@ nav a::after {
 nav a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+
+.scroll-container {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+  -ms-overflow-style: none;  /* Hide Scrollbar - Internet Explorer 10+ */
+  scrollbar-width: none;  /* Hide Scrollbar - Firefox */
+}
+
+.scroll-container-sub {
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out; 
+  background-color: var(--primary-feature-color);
+  color:var(--main-text-color);
+  border: 2px solid var(--highlight-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+
+::-webkit-scrollbar {
+  display: none; /* Hide Scrollbar - Chrome */
 }
