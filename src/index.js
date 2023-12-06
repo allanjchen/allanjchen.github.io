@@ -1,5 +1,5 @@
 // Intersection Observer
-const containers = document.querySelectorAll('.scroll-container-sub');
+const containers = document.querySelectorAll('.page-section-sub');
 
 const options = {
   root: null,
