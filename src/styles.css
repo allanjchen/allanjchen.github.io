@@ -22,8 +22,8 @@
 body {
     background-color:var(--main-bg-color);
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+    margin: none;
+    padding: none;
 }
 h1 {
   color: var(--title-text-color);
@@ -52,14 +52,14 @@ p {
   box-shadow: inset 400px 0 0 0 var(--highlight-text-color);
 }
 
-header {
-  background-color: var(--main-bg-color);
-  overflow: hidden;
-}
 .navbar {
-  position: sticky;
+  position: fixed;
+  overflow: hidden;
 	width: 95%;
-  margin: 25px 0;
+  padding: 25px 0;
+  top: 0;
+  background-color: var(--main-bg-color);
+  transition: top 0.3s ease-in-out;
 }
 
 .logo {
@@ -130,30 +130,42 @@ nav a:hover::after {
   justify-content: center;
   height: 100%;
   padding: 10vw 10vh;
-
 }
 
 .project-list {
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--page-margin);
 }
 
 .project-list ul {
-  margin: var(--page-margin);
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .project-list li {
-  display: block;
+  display: flex;  
   position: relative;
   background-color: var(--primary-feature-color);
+  width: 1000px;
   margin: 25px 0;
-  padding: 10px;
+  padding: 15px;
   border-radius: 15px;
+}
+
+.project-list li p {
+  font-size: 2.5em;
+  color: var(--main-text-color);
+  margin: 10px;
+  padding: none;
 }
 
 .project-list li img {
   margin: 10px;
+  padding: none;
   height: 50px;
   width: 50px;
 }

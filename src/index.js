@@ -1,4 +1,3 @@
-// Intersection Observer
 const containers = document.querySelectorAll('.page-section-sub');
 
 const options = {
@@ -18,4 +17,24 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 containers.forEach(container => {
   observer.observe(container);
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  let prevScrollPos = window.scrollY;
+  function handleScroll(event) {
+      let currentScrollPos = window.scrollY;
+      let deltaY = event.deltaY;
+      if (deltaY < 0) {
+          // Scrolling up
+          document.getElementById("navbar").style.top = "0";
+      } else {
+          // Scrolling down
+          document.getElementById("navbar").style.top = "-100px";
+      }
+      prevScrollPos = currentScrollPos;
+  }
+  window.addEventListener('wheel', function(event) {
+      handleScroll(event);
+  });
 });
