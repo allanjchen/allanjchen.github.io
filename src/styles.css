@@ -5,6 +5,9 @@
   --main-text-color: #C5C6C7;
   --highlight-text-color: #B29B52;
   --primary-feature-color: #45A29E;
+
+  --page-margin: 0 50px;
+
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
@@ -108,13 +111,11 @@ nav a:hover::after {
   transform-origin: bottom left;
 }
 
-
 .page-section {
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
-
   -ms-overflow-style: none;  /* Hide Scrollbar - Internet Explorer 10+ */
   scrollbar-width: none;  /* Hide Scrollbar - Firefox */
 }
@@ -132,4 +133,27 @@ nav a:hover::after {
 
 }
 
+.project-list {
+  overflow: hidden;
+}
 
+.project-list ul {
+  margin: var(--page-margin);
+  padding: 0;
+  list-style: none;
+}
+
+.project-list li {
+  display: block;
+  position: relative;
+  background-color: var(--primary-feature-color);
+  margin: 25px 0;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.project-list li img {
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+}
