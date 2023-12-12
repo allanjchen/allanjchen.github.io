@@ -40,11 +40,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("DOM Conetnt Loaded!");
-  fetch("src/project_cards.json") 
+  fetch("https://allanjchen.github.io/src/project_cards.json") 
       .then(response => response.json())
       .then(data => { 
-          generateContentCards(data.project-cards);
+          generateContentCards(data.cards);
+          console.log("DOM Content Loaded!");
       })
       .catch(error => console.error("Error fetching JSON:", error));
 });
