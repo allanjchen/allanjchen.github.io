@@ -39,35 +39,41 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  fetch("src/project_cards.json") 
-      .then(response => response.json())
-      .then(data => { 
-          generateContentCards(data.cards);
-          console.log("DOM Content Loaded!");
-      })
-      .catch(error => console.error("Error fetching JSON:", error));
-});
-
 function generateContentCards(cards) {
-  const container = document.getElementById("content-container");
-  if (Array.isArray(cards)) {
-      if (cards.length > 0) {
-          cards.forEach(card => {
-              const cardElement = document.createElement("div");
-              cardElement.classList.add("card");
-              cardElement.innerHTML = `
-                  <h2>${card.title}</h2>
-                  <p>${card.description}</p>
-                  <img src="${card.imageUrl}" alt="${card.title}">
-                  <a href="${card.link}" target="_blank">Read more</a>
-              `;
-              container.appendChild(cardElement);
-          });
-      } else {
-          console.error("Error: 'cards' array is empty.");
-      }
+  const container = document.getElementById("project-cards");
+  // Check if 'container' is found in the document
+  if (container) {
+    // Check if 'cards' is defined and is an array
+    if (Array.isArray(cards) && cards.length > 0) {
+      cards.forEach(card => {
+        // Create a card element
+        const cardElement = document.createElement("div");
+        cardElement.classList.add("card");
+        // Populate card content
+        cardElement.innerHTML = `
+          <h2>${card.title}</h2>
+          <p>${card.description}</p>
+          <img src="${card.imageUrl}" alt="${card.title}" style="width:50px;height:50px">
+          <a href="${card.link}" target="_blank">Read more</a>
+        `;
+        // Append the card to the container
+        container.appendChild(cardElement);
+      });
+    } else {
+      console.error("Error: 'cards' is not an array or is empty.");
+    }
   } else {
-      console.error("Invalid JSON format: 'cards' property is missing or not an array");
+    console.error("Error: 'project-cards' not found in the document.");
   }
 }
+// Fetch JSON data and generate content cards
+fetch("src/project_cards.json")
+  .then(response => response.json())
+  .then(data => {
+    if (data.cards && data.cards.length > 0) {
+      generateContentCards(data.cards);
+    } else {
+      console.error("Error: 'cards' is not an array or is empty.");
+    }
+  })
+  .catch(error => console.error("Error fetching JSON:", error));

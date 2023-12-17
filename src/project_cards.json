@@ -3,16 +3,23 @@
       {
           "title": "Card 1",
           "description": "This is the content of card 1.",
-          "imageUrl": "https://example.com/card1.jpg",
-          "link": "https://example.com/card1",
+          "imageUrl": "media/placeholder-square.png",
+          "link": "media/placeholder-square.png",
           "tags": ["tag1", "tag2"]
       },
       {
           "title": "Card 2",
           "description": "This is the content of card 2.",
-          "imageUrl": "https://example.com/card2.jpg",
-          "link": "https://example.com/card2",
+          "imageUrl": "media/placeholder-square.png",
+          "link": "media/placeholder-square.png",
           "tags": ["tag2", "tag3"]
-      }
+      },
+      {
+        "title": "Card 3",
+        "description": "This is the content of card 3.",
+        "imageUrl": "media/placeholder-square.png",
+        "link": "media/placeholder-square.png",
+        "tags": ["tag2", "tag3"]
+    }
   ]
 }
