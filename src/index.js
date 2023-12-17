@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("https://allanjchen.github.io/src/project_cards.json") 
+  fetch("src/project_cards.json") 
       .then(response => response.json())
       .then(data => { 
           generateContentCards(data.cards);
@@ -50,16 +50,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function generateContentCards(cards) {
-  const container = document.getElementById("project-cards");
-  cards.forEach(card => {
-      const cardElement = document.createElement("div");
-      cardElement.classList.add("card");
-      cardElement.innerHTML = `
-          <h1>${card.title}</h1>
-          <p>${card.description}</p>
-          <img src="${card.imageUrl}" alt="${card.title}">
-          <a href="${card.link}" target="_blank">Read more</a>
-      `;
-      container.appendChild(cardElement);
-  });
+  const container = document.getElementById("content-container");
+  if (Array.isArray(cards)) {
+      if (cards.length > 0) {
+          cards.forEach(card => {
+              const cardElement = document.createElement("div");
+              cardElement.classList.add("card");
+              cardElement.innerHTML = `
+                  <h2>${card.title}</h2>
+                  <p>${card.description}</p>
+                  <img src="${card.imageUrl}" alt="${card.title}">
+                  <a href="${card.link}" target="_blank">Read more</a>
+              `;
+              container.appendChild(cardElement);
+          });
+      } else {
+          console.error("Error: 'cards' array is empty.");
+      }
+  } else {
+      console.error("Invalid JSON format: 'cards' property is missing or not an array");
+  }
 }
