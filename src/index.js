@@ -39,25 +39,40 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// Function to generate content cards with a specific order
 function generateContentCards(cards) {
   const container = document.getElementById("project-cards");
   // Check if 'container' is found in the document
   if (container) {
     // Check if 'cards' is defined and is an array
     if (Array.isArray(cards) && cards.length > 0) {
+      // Sort the cards based on the 'order' property
+      cards.sort((a, b) => (a.order || Infinity) - (b.order || Infinity));
+
       cards.forEach(card => {
+        // Exclude cards
+        if (card.exclude) {
+          return;
+        }
         // Create a card element
+        const cardLinkElement = document.createElement("a");
+        cardLinkElement.classList.add("card-link");
+        cardLinkElement.href = card.link;
+
         const cardElement = document.createElement("div");
         cardElement.classList.add("card");
+
         // Populate card content
         cardElement.innerHTML = `
           <h2>${card.title}</h2>
           <p>${card.description}</p>
-          <img src="${card.imageUrl}" alt="${card.title}" style="width:50px;height:50px">
-          <a href="${card.link}" target="_blank">Read more</a>
+          <img src="${card.imageUrl}" alt="${card.title}">
         `;
-        // Append the card to the container
-        container.appendChild(cardElement);
+
+          // Append the card content to the link
+          cardLinkElement.innerHTML = cardElement.outerHTML;
+          // Append the link to the container
+          container.appendChild(cardLinkElement);
       });
     } else {
       console.error("Error: 'cards' is not an array or is empty.");
@@ -66,8 +81,9 @@ function generateContentCards(cards) {
     console.error("Error: 'project-cards' not found in the document.");
   }
 }
+
 // Fetch JSON data and generate content cards
-fetch("src/project_cards.json")
+fetch("../src/project_cards.json")
   .then(response => response.json())
   .then(data => {
     if (data.cards && data.cards.length > 0) {

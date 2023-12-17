@@ -1,25 +1,36 @@
 {
   "cards": [
       {
-          "title": "Card 1",
-          "description": "This is the content of card 1.",
-          "imageUrl": "media/placeholder-square.png",
-          "link": "media/placeholder-square.png",
-          "tags": ["tag1", "tag2"]
+        "order": 1, "exclude": false,
+        "title": "Card 1",
+        "description": "This is the content of card 1.",
+        "imageUrl": "../media/placeholder-square.png",
+        "link": "https://google.com",
+        "tags": ["tag1", "tag2"]
       },
       {
-          "title": "Card 2",
-          "description": "This is the content of card 2.",
-          "imageUrl": "media/placeholder-square.png",
-          "link": "media/placeholder-square.png",
-          "tags": ["tag2", "tag3"]
+        "order": 1, "exclude": false,
+        "title": "Card 2",
+        "description": "This is the content of card 2.",
+        "imageUrl": "../media/placeholder-square.png",
+        "link": "https://google.com",
+        "tags": ["tag2", "tag3"]
       },
       {
+        "order": 1, "exclude": false,
         "title": "Card 3",
         "description": "This is the content of card 3.",
-        "imageUrl": "media/placeholder-square.png",
-        "link": "media/placeholder-square.png",
+        "imageUrl": "../media/placeholder-square.png",
+        "link": "https://google.com",
         "tags": ["tag2", "tag3"]
-    }
+      },
+      {
+        "order": 1, "exclude": false,
+        "title": "Card 4",
+        "description": "This is the content of card 4.",
+        "imageUrl": "../media/placeholder-square.png",
+        "link": "https://google.com",
+        "tags": ["tag2", "tag3"]
+      }
   ]
 }
