@@ -5,7 +5,7 @@
         "title": "Card 1",
         "description": "This is the content of card 1.",
         "imageUrl": "../media/placeholder-square.png",
-        "link": "https://google.com",
+        "link": "project_page_1.html",
         "tags": ["tag1", "tag2"]
       },
       {

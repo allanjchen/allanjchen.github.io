@@ -41,6 +41,7 @@ p {
   padding: 18px 36px;
   display: inline-block;
   font-size: 18px;
+  text-decoration: none;
   cursor: pointer;
   box-shadow: inset 0 0 0 0 var(--highlight-text-color);
   --transition-time: 0.3s; /* set transition times */
@@ -85,7 +86,7 @@ nav li {
 
 nav a {
   padding: none;
-  font-size: 20px;
+  font-size: 25px;
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
   border: none;
@@ -97,7 +98,7 @@ nav a::after {
   content: '';
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 3px;
   bottom: 0;
   left: 0;
   background-color: var(--highlight-text-color);
