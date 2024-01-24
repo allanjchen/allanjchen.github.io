@@ -1,18 +1,30 @@
 /*Global Theme Control Variables*/
 :root {
-  --main-bg-color: #1F2833;
-  --title-text-color: #66FCF1;
-  --main-text-color: #C5C6C7;
+  /*
+  --bg-color-1: #1F2833;
+  --title-text-color-1: #66FCF1;
+  --body-text-color-1: #C5C6C7;
   --highlight-text-color: #B29B52;
-  --primary-feature-color: #45A29E;
+  --feature-color-1: #45A29E;
+  */
+  --bg-color-1: #dfd7ca;
+  --title-text-color-1: #3d4548;
+  --body-text-color-1: #8498a8;
+  --highlight-text-color: white; /*Find better color*/
+  --feature-color-1: #cfcfcfa1;
+
 
   --page-margin: 0 50px;
 
-  font-family: Inter, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  font-family: 'Jura', sans-serif;
 }
-@supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif; }
+
+@font-face {
+  font-family: 'Jura';
+  src: url('fonts/Jura/Jura-VariableFont_wght.ttf') format('truetype');
+  /* Add additional font weights and styles if needed */
+  font-weight: 450;
+  font-style: normal;
 }
 
 ::-webkit-scrollbar {
@@ -20,22 +32,22 @@
 }
 
 body {
-    background-color:var(--main-bg-color);
+    background-color:var(--bg-color-1);
     overflow-x: hidden;
     margin: none;
     padding: none;
 }
 h1 {
-  color: var(--title-text-color);
+  color: var(--title-text-color-1);
   font-size: 10em;
 }
 p {
-  color: var(--main-text-color);
-  font-size: 2.5em
+  color: var(--body-text-color-1);
+  font-size: 2.5em;
 }
 
 .button-1 {
-  color: var(--main-text-color);
+  color: var(--body-text-color-1);
   border: 2px solid var(--highlight-text-color);
   border-radius: 15px;
   padding: 18px 36px;
@@ -59,8 +71,8 @@ p {
 	width: 95%;
   padding: 25px 0;
   top: 0;
-  background-color: var(--main-bg-color);
-  transition: top 0.3s ease-in-out;
+  background-color: var(--bg-color-1);
+  transition: top 0.2s ease-in-out;
 }
 
 .logo {
@@ -87,8 +99,8 @@ nav li {
 nav a {
   padding: none;
   font-size: 25px;
-  color: var(--main-text-color);
-  background-color: var(--main-bg-color);
+  color: black;
+  background-color: var(--bg-color-1);
   border: none;
   position: relative;
   text-decoration: none;
@@ -122,15 +134,39 @@ nav a:hover::after {
 }
 
 .page-section-sub {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out; 
-  background-color: var(--main-bg-color);
-  color:var(--main-text-color);
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out; 
+  background-color: var(--bg-color-1);
+  color:var(--body-text-color-1);
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 100%;
   padding: 10vw 10vh;
+}
+
+.flexbox-1 {
+  background-color: var(--bg-color-1);
+  color:var(--body-text-color-1);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 100%;
+  padding: 0 10px;
+}
+.flexbox-1 h1 {
+  margin: 0;
+  padding: 5px;
+  font-size: 7em;
+  text-align: left;
+}
+.flexbox-1 p {
+  margin: 0;
+  padding: 5px;
+  font-size: 2.75em;
+  text-align: left;
 }
 
 #project-cards {
@@ -142,15 +178,15 @@ nav a:hover::after {
 }
 
 .card h2 {
-  color: var(--main-text-color);
+  color: var(--title-text-color-1);
   font-size: 3em;
 }
 .card p {
-color: var(--main-text-color);
+color: var(--body-text-color-1);
 }
 
 .card {
-  background-color: var(--primary-feature-color);
+  background-image: linear-gradient(var(--feature-color-1), #eae5de);
   border-radius: 10px;
   overflow: hidden;
   margin: none;
@@ -170,8 +206,8 @@ color: var(--main-text-color);
 .card a {
   display: inline-block;
   padding: 10px 15px;
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
+  background-color: var(--bg-color-1);
+  color: var(--body-text-color-1);
   text-decoration: none;
   border-radius: 4px;
 }

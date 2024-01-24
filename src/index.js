@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
           document.getElementById("navbar").style.top = "0";
       } else {
           // Scrolling down
-          document.getElementById("navbar").style.top = "-100px";
+          document.getElementById("navbar").style.top = "-200px";
       }
       prevScrollPos = currentScrollPos;
   }
