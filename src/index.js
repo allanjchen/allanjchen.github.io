@@ -82,7 +82,7 @@ function generateContentCards(cards) {
 }
 
 // Fetch JSON data and generate content cards
-fetch("../src/project_cards.json")
+fetch("../src/projects.json")
   .then(response => response.json())
   .then(data => {
     if (data.cards && data.cards.length > 0) {
