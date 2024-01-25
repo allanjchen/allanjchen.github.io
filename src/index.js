@@ -48,7 +48,6 @@ function generateContentCards(cards) {
     if (Array.isArray(cards) && cards.length > 0) {
       // Sort the cards based on the 'order' property
       cards.sort((a, b) => (a.order || Infinity) - (b.order || Infinity));
-
       cards.forEach(card => {
         // Exclude cards
         if (card.exclude) {
@@ -65,8 +64,8 @@ function generateContentCards(cards) {
         // Populate card content
         cardElement.innerHTML = `
           <h2>${card.title}</h2>
-          <p>${card.description}</p>
-          <img src="${card.imageUrl}" alt="${card.title}">
+          <p>${card.cardDescription}</p>
+          <img src="${card.cardImage}" alt="Image Not Found">
         `;
 
           // Append the card content to the link
