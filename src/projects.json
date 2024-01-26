@@ -1,40 +1,68 @@
 {
-  "cards": [
+  "projects": [
       {
-        "order": 1, "exclude": false,
-        "title": "Card 1",
-        "cardDescription": "This is the content of card 1.",
-        "cardImage": "../media/placeholder-square.png",
-        "link": "../pages/project_pages/project_page_1.html",
-        "tags": ["tag1", "tag2"],
-        "skills": ["skill1","skill2"]
+        "title":"Card 1", "order": 1, "exclude": false,
+        "tags": ["tag2", "tag3"],
+        "skills": ["skill1","skill2"],
+
+        "card": {
+          "description": "This is the content of card 1",
+          "image": "../media/placeholder-square.png",
+          "link": "project_page_1.html"
+        },
+        "page": {
+          "description": "This is the content of card 1",
+          "image_main": "../media/placeholder-square.png",
+          "image_carousel":{}
+        }
       },
       {
-        "order": 1, "exclude": false,
-        "title": "Card 2",
-        "cardDescription": "This is the content of card 2.",
-        "cardImage": "../media/placeholder-square.png",
-        "link": "https://google.com",
+        "title":"Card 2", "order": 1, "exclude": false,
         "tags": ["tag2", "tag3"],
-        "skills": ["skill1","skill2"]
+        "skills": ["skill1","skill2"],
+
+        "card": {
+          "description": "This is the content of card 2",
+          "image": "../media/placeholder-square.png",
+          "link": "project_page_1.html"
+        },
+        "page": {
+          "description": "This is the content of card 2",
+          "image_main": "../media/placeholder-square.png",
+          "image_carousel":{}
+        }
       },
       {
-        "order": 1, "exclude": false,
-        "title": "Card 3",
-        "cardDescription": "This is the content of card 3.",
-        "cardImage": "../media/placeholder-square.png",
-        "link": "https://google.com",
+        "title":"Card 2", "order": 1, "exclude": false,
         "tags": ["tag2", "tag3"],
-        "skills": ["skill1","skill2"]
+        "skills": ["skill1","skill2"],
+
+        "card": {
+          "description": "This is the content of card 2",
+          "image": "../media/placeholder-square.png",
+          "link": "project_page_1.html"
+        },
+        "page": {
+          "description": "This is the content of card 2",
+          "image_main": "../media/placeholder-square.png",
+          "image_carousel":{}
+        }
       },
       {
-        "order": 1, "exclude": false,
-        "title": "Card 4",
-        "cardDescription": "This is the content of card 4.",
-        "cardImage": "../media/placeholder-square.png",
-        "link": "https://google.com",
+        "title":"Card 2", "order": 1, "exclude": false,
         "tags": ["tag2", "tag3"],
-        "skills": ["skill1","skill2"]
+        "skills": ["skill1","skill2"],
+
+        "card": {
+          "description": "This is the content of card 2",
+          "image": "../media/placeholder-square.png",
+          "link": "project_page_1.html"
+        },
+        "page": {
+          "description": "This is the content of card 2",
+          "image_main": "../media/placeholder-square.png",
+          "image_carousel":{}
+        }
       }
   ]
 }
