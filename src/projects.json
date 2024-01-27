@@ -1,6 +1,7 @@
 {
   "projects": [
       {
+        "IDNUM": 1,
         "title":"Card 1", "order": 1, "exclude": false,
         "tags": ["tag2", "tag3"],
         "skills": ["skill1","skill2"],
@@ -17,6 +18,7 @@
         }
       },
       {
+        "IDNUM": 2,
         "title":"Card 2", "order": 1, "exclude": false,
         "tags": ["tag2", "tag3"],
         "skills": ["skill1","skill2"],
@@ -24,39 +26,7 @@
         "card": {
           "description": "This is the content of card 2",
           "image": "../media/placeholder-square.png",
-          "link": "project_page_1.html"
-        },
-        "page": {
-          "description": "This is the content of card 2",
-          "image_main": "../media/placeholder-square.png",
-          "image_carousel":{}
-        }
-      },
-      {
-        "title":"Card 2", "order": 1, "exclude": false,
-        "tags": ["tag2", "tag3"],
-        "skills": ["skill1","skill2"],
-
-        "card": {
-          "description": "This is the content of card 2",
-          "image": "../media/placeholder-square.png",
-          "link": "project_page_1.html"
-        },
-        "page": {
-          "description": "This is the content of card 2",
-          "image_main": "../media/placeholder-square.png",
-          "image_carousel":{}
-        }
-      },
-      {
-        "title":"Card 2", "order": 1, "exclude": false,
-        "tags": ["tag2", "tag3"],
-        "skills": ["skill1","skill2"],
-
-        "card": {
-          "description": "This is the content of card 2",
-          "image": "../media/placeholder-square.png",
-          "link": "project_page_1.html"
+          "link": "project_page_2.html"
         },
         "page": {
           "description": "This is the content of card 2",

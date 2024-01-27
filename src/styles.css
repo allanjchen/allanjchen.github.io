@@ -46,11 +46,15 @@ p {
 }
 
 .button-1 {
+  height: 25px; width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: var(--body-text-color-1);
   border: 2px solid var(--highlight-text-color);
   border-radius: 10px;
   padding: 18px 36px;
-  display: inline-block;
   font-size: 18px;
   text-decoration: none;
   cursor: pointer;
@@ -217,4 +221,15 @@ color: var(--body-text-color-1);
   margin: 50px;
   height: 500px;
   width: 500px;
+}
+
+.page {
+  background-color: var(--bg-color-1);
+  color:var(--body-text-color-1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 10vw 10vh;
 }

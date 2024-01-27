@@ -43,19 +43,35 @@ fetch("../src/projects.json")
   .then(response => response.json())
   .then(data => {
     if (data.projects && data.projects.length > 0) {
-      generateProjects(data.projects);
+      projectPreChecks(data.projects);
+      generateProjectCards(data.projects);
+      generateProjectPages(data.projects);
     } else {
       console.error("Error: 'projects' is not an array or is empty.");
     }
   })
   .catch(error => console.error("Error fetching JSON:", error));
 
+function projectPreChecks(projects) {
+  var IDNUMS = [];
+  for (let i = 0; i < projects.length; i++) {
+    if (IDNUMS.includes(projects[i].IDNUM)) {
+      projects[i].IDNUM++;
+      IDNUMS.push(projects[i].IDNUM);
+    } else if (projects[i].IDNUM < 1) {
+      projects[i].IDNUM = Math.max(IDNUMS) + 1;
+      IDNUMS.push(projects[i].IDNUM);
+    } else {
+      IDNUMS.push(projects[i].IDNUM);
+    }
+  }
+}
+
 // Function to generate content cards with a specific order
-function generateProjects(projects) {
+function generateProjectCards(projects) {
   const container_card = document.getElementById("project-cards");
-  const container_page = document.getElementById("project-page");
   // Check if 'container' is found in the document
-  if (container_card || container_page) {
+  if (container_card) {
     // Check if 'projects' is defined and is an array
     if (Array.isArray(projects) && projects.length > 0) {
       // Sort the projects based on the 'order' property
@@ -65,7 +81,6 @@ function generateProjects(projects) {
         if (project.exclude) {
           return;
         }
-        if (container_card) {
         // Create cards
         const cardLinkElement = document.createElement("a");
         cardLinkElement.classList.add("card-link");
@@ -75,30 +90,46 @@ function generateProjects(projects) {
         // Populate card content
         cardElement.innerHTML = `
           <h2>${project.title}</h2>
-          <p>${project.card.description}</p>
+          <p>${project.IDNUM}</p>
           <img src="${project.card.image}" alt="Image Not Found">
         `;
         // Append the card content to the link
         cardLinkElement.innerHTML = cardElement.outerHTML;
         // Append the link to container_card
         container_card.appendChild(cardLinkElement);
-        }
-        if (container_page) {
-        // Create pages
-        const pageElement = document.createElement("div");
-        pageElement.classList.add("page");
-        // Populate page content
-        pageElement.innerHTML = `
-        <img src="${project.page.image_main}" alt="Image Not Found" style="width:600px;height:600px;border-radius:10px;">
-          `;
-        // Append the container to container_page
-        container_page.appendChild(pageElement);
-        }
       });
     } else {
       console.error("Error: 'projects' is not an array or is empty.");
     }
-  } else {
-    console.error("Error: 'project-cards' or 'project-page' not found in the document.");
+  }
+}
+
+function generateProjectPages(projects) {
+  for (let i = 0; i < projects.length; i++) {
+    var pageTemp = "project-page-" + JSON.stringify(i+1);
+    const container_page = document.getElementById(pageTemp);
+    if (container_page) {
+      if (Array.isArray(projects) && projects.length > 0) {
+          // Exclude projects
+          if (projects[i].exclude) {
+            return;
+          }
+          const pageElement = document.createElement("div");
+          pageElement.classList.add("page");
+          // Populate page content
+          pageElement.innerHTML = `
+          <img src="${projects[i].page.image_main}" alt="Image Not Found" style="width:600px;height:600px;border-radius:10px;">
+          <div class="flexbox-1">
+            <h1>Hey There!</h1>
+            <p>${projects[i].page.description}</p>
+            <a href = "project_archive.html" class="button-1 b1-slide-right">Return To Project Archive</a>
+          </div>
+            `;
+          // Append the container to container_page
+          container_page.appendChild(pageElement);
+      } else {
+        console.error("Error: 'projects' is not an array or is empty.");
+      }
+    }
   }
 }
