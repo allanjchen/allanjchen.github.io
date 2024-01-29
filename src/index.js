@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
           document.getElementById("navbar").style.top = "0";
       } else {
           // Scrolling down
-          document.getElementById("navbar").style.top = "-200px";
+          document.getElementById("navbar").style.top = "-500px";
       }
       prevScrollPos = currentScrollPos;
   }
@@ -39,13 +39,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Fetch JSON data and generate content cards
-fetch("../src/projects.json")
+fetch("/src/projects.json")
   .then(response => response.json())
   .then(data => {
     if (data.projects && data.projects.length > 0) {
       projectPreChecks(data.projects);
       generateProjectCards(data.projects);
       generateProjectPages(data.projects);
+      generateFeaturedProjects(data.projects);
     } else {
       console.error("Error: 'projects' is not an array or is empty.");
     }
@@ -112,7 +113,7 @@ function generateProjectPages(projects) {
       if (Array.isArray(projects) && projects.length > 0) {
           // Exclude projects
           if (projects[i].exclude) {
-            return;
+            continue;
           }
           const pageElement = document.createElement("div");
           pageElement.classList.add("page");
@@ -122,7 +123,7 @@ function generateProjectPages(projects) {
           <div class="flexbox-1">
             <h1>Hey There!</h1>
             <p>${projects[i].page.description}</p>
-            <a href = "project_archive.html" class="button-1 b1-slide-right">Return To Project Archive</a>
+            <a href = "/pages/project_archive.html" class="button-1 b1-slide-right">Return To Project Archive</a>
           </div>
             `;
           // Append the container to container_page
@@ -131,5 +132,60 @@ function generateProjectPages(projects) {
         console.error("Error: 'projects' is not an array or is empty.");
       }
     }
+  }
+}
+
+function generateFeaturedProjects(projects) {
+  const container_card = document.getElementById("featured-project-collapsibles");
+  // Check if 'container' is found in the document
+  if (container_card) {
+    // Check if 'projects' is defined and is an array
+    if (Array.isArray(projects) && projects.length > 0) {
+      // Sort the projects based on the 'order' property
+      projects.sort((a, b) => (a.order || Infinity) - (b.order || Infinity));
+
+
+      for (let i = 0; i < projects.length; i++) {
+        // Exclude projects
+        if (projects[i].exclude || (projects[i].order>5)) {
+          continue;
+        }
+        // Create cards
+        const cardElement = document.createElement("div");
+        cardElement.classList.add("collapsible");
+        // Populate card content
+        cardElement.innerHTML = `
+          <div class="collapsible-item">
+            <a href="#" class="collapsible-title" onclick="collapsibleClick('tab${i}')">
+              <img src="${projects[i].card.image}" alt="Image Not Found" style="width:250px;height:250px;border-radius:10px;">
+              <h1>${projects[i].title}</h1>
+            </a>
+            <div id="tab${i}"  class="collapsible-content" style="max-height:0px">
+              <p>Lorem ipsum dolor...</p>
+              <a href=${projects[i].card.link}>View Project Page</a>
+            </div>
+        `;
+        container_card.appendChild(cardElement);
+      };
+      const archiveLink = document.createElement("div");
+      archiveLink.classList.add("collapsible")
+      archiveLink.innerHTML = `
+        <a href="/pages/project_archive.html" class="collapsible-title">
+          <h2>View Project Archive</h2>
+        </a>
+      `;
+      container_card.appendChild(archiveLink);
+    } else {
+      console.error("Error: 'projects' is not an array or is empty.");
+    }
+  }
+}
+
+function collapsibleClick(content) {
+  var element = document.getElementById(content);
+  if (element.style.maxHeight == '0px') {
+    element.style.maxHeight = '100px';
+  } else {
+    element.style.maxHeight = '0px'
   }
 }

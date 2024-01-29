@@ -2,35 +2,52 @@
   "projects": [
       {
         "IDNUM": 1,
-        "title":"Card 1", "order": 1, "exclude": false,
+        "title":"Project 1", "order": 1, "exclude": false,
         "tags": ["tag2", "tag3"],
         "skills": ["skill1","skill2"],
 
         "card": {
           "description": "This is the content of card 1",
-          "image": "../media/placeholder-square.png",
-          "link": "project_page_1.html"
+          "image": "/media/placeholder-square.png",
+          "link": "/pages/project_pages/project_page_1.html"
         },
         "page": {
           "description": "This is the content of card 1",
-          "image_main": "../media/placeholder-square.png",
+          "image_main": "/media/placeholder-square.png",
           "image_carousel":{}
         }
       },
       {
         "IDNUM": 2,
-        "title":"Card 2", "order": 1, "exclude": false,
+        "title":"Project 2", "order": 2, "exclude": true,
         "tags": ["tag2", "tag3"],
         "skills": ["skill1","skill2"],
 
         "card": {
           "description": "This is the content of card 2",
-          "image": "../media/placeholder-square.png",
-          "link": "project_page_2.html"
+          "image": "/media/placeholder-square.png",
+          "link": "/pages/project_pages/project_page_2.html"
         },
         "page": {
           "description": "This is the content of card 2",
-          "image_main": "../media/placeholder-square.png",
+          "image_main": "/media/placeholder-square.png",
+          "image_carousel":{}
+        }
+      },
+      {
+        "IDNUM": 3,
+        "title":"Project 3", "order": 3, "exclude": false,
+        "tags": ["tag2", "tag3"],
+        "skills": ["skill1","skill2"],
+
+        "card": {
+          "description": "This is the content of card 3",
+          "image": "/media/placeholder-square.png",
+          "link": "/pages/project_pages/project_page_3.html"
+        },
+        "page": {
+          "description": "This is the content of card 3",
+          "image_main": "/media/placeholder-square.png",
           "image_carousel":{}
         }
       }
