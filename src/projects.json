@@ -19,7 +19,7 @@
       },
       {
         "IDNUM": 2,
-        "title":"Project 2", "order": 2, "exclude": true,
+        "title":"Project 2", "order": 2, "exclude": false,
         "tags": ["tag2", "tag3"],
         "skills": ["skill1","skill2"],
 

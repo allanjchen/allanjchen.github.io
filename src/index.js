@@ -147,7 +147,7 @@ function generateFeaturedProjects(projects) {
 
       for (let i = 0; i < projects.length; i++) {
         // Exclude projects
-        if (projects[i].exclude || (projects[i].order>5)) {
+        if (projects[i].exclude || (projects[i].order>3)) {
           continue;
         }
         // Create cards
