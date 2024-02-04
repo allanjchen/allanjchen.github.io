@@ -20,16 +20,21 @@ containers.forEach(container => {
 
 
 document.addEventListener("DOMContentLoaded", function() {
+  // Check if navbar element exists before proceeding
+  const navbar = document.getElementById("navbar");
+  if (!navbar) {
+    return;
+  }
   let prevScrollPos = window.scrollY;
   function handleScroll(event) {
       let currentScrollPos = window.scrollY;
       let deltaY = event.deltaY;
       if (deltaY < 0) {
           // Scrolling up
-          document.getElementById("navbar").style.top = "0";
+          navbar.style.top = "0";
       } else {
           // Scrolling down
-          document.getElementById("navbar").style.top = "-500px";
+          navbar.style.top = "-1000px";
       }
       prevScrollPos = currentScrollPos;
   }
@@ -125,6 +130,8 @@ function generateProjectPages(projects) {
             <p>${projects[i].page.description}</p>
             <a href = "/pages/project_archive.html" class="button-1 b1-slide-right">Return To Project Archive</a>
           </div>
+
+
             `;
           // Append the container to container_page
           container_page.appendChild(pageElement);
@@ -189,3 +196,4 @@ function collapsibleClick(content) {
     element.style.maxHeight = '0px'
   }
 }
+
