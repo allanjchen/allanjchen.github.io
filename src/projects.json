@@ -50,6 +50,23 @@
           "image_main": "/media/placeholder-square.png",
           "image_carousel":{}
         }
+      },
+      {
+        "IDNUM": 4,
+        "title":"Project 4", "order": 4, "exclude": false,
+        "tags": ["tag2", "tag3"],
+        "skills": ["skill1","skill2"],
+
+        "card": {
+          "description": "This is the content of card 4",
+          "image": "/media/placeholder-square.png",
+          "link": "/pages/project_pages/project_page_4.html"
+        },
+        "page": {
+          "description": "This is the content of card 4",
+          "image_main": "/media/placeholder-square.png",
+          "image_carousel":{}
+        }
       }
   ]
 }

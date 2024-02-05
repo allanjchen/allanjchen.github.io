@@ -95,9 +95,16 @@ function generateProjectCards(projects) {
         cardElement.classList.add("card");
         // Populate card content
         cardElement.innerHTML = `
-          <h2>${project.title}</h2>
-          <p>${project.IDNUM}</p>
           <img src="${project.card.image}" alt="Image Not Found">
+          <div class="flexbox-2">
+            <h1>${project.title}</h1>
+            <p>${project.IDNUM}</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. 
+            Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. 
+            Praesent mauris.
+            </p>
+          </div>
         `;
         // Append the card content to the link
         cardLinkElement.innerHTML = cardElement.outerHTML;
@@ -124,14 +131,16 @@ function generateProjectPages(projects) {
           pageElement.classList.add("page");
           // Populate page content
           pageElement.innerHTML = `
-          <img src="${projects[i].page.image_main}" alt="Image Not Found" style="width:600px;height:600px;border-radius:10px;">
-          <div class="flexbox-1">
-            <h1>Hey There!</h1>
-            <p>${projects[i].page.description}</p>
-            <a href = "/pages/project_archive.html" class="button-1 b1-slide-right">Return To Project Archive</a>
+          <div style="display:flex;flex-direction:row;width:60vw;">
+            <a href = "/pages/project_archive.html" class="button-1 b1-slide-right" style="margin:15px 0;">Return To Project Archive</a>
           </div>
-
-
+          <div style="display:flex;flex-direction:row;width:60vw;">
+              <img src="${projects[i].page.image_main}" alt="Image Not Found" style="width:600px;height:600px;border-radius:10px;">
+              <div class="flexbox-1">
+                <h1>${projects[i].title}</h1>
+                <p>${projects[i].page.description}</p>
+              </div>
+            </div>
             `;
           // Append the container to container_page
           container_page.appendChild(pageElement);
@@ -169,7 +178,7 @@ function generateFeaturedProjects(projects) {
             </a>
             <div id="tab${i}"  class="collapsible-content" style="max-height:0px">
               <p>Lorem ipsum dolor...</p>
-              <a href=${projects[i].card.link}>View Project Page</a>
+              <a href=${projects[i].card.link} style="margin:10px;">View Project Page</a>
             </div>
         `;
         container_card.appendChild(cardElement);
@@ -178,7 +187,7 @@ function generateFeaturedProjects(projects) {
       archiveLink.classList.add("collapsible")
       archiveLink.innerHTML = `
         <a href="/pages/project_archive.html" class="collapsible-title">
-          <h2>View Project Archive</h2>
+          <h3>View Project Archive</h3>
         </a>
       `;
       container_card.appendChild(archiveLink);
@@ -191,9 +200,8 @@ function generateFeaturedProjects(projects) {
 function collapsibleClick(content) {
   var element = document.getElementById(content);
   if (element.style.maxHeight == '0px') {
-    element.style.maxHeight = '100px';
+    element.style.maxHeight = '250px';
   } else {
     element.style.maxHeight = '0px'
   }
 }
-
