@@ -82,35 +82,32 @@ function generateProjectCards(projects) {
     if (Array.isArray(projects) && projects.length > 0) {
       // Sort the projects based on the 'order' property
       projects.sort((a, b) => (a.order || Infinity) - (b.order || Infinity));
-      projects.forEach(project => {
+      for (let i = 0; i < projects.length; i++) {
         // Exclude projects
-        if (project.exclude) {
+        if (projects[i].exclude) {
           return;
         }
         // Create cards
         const cardLinkElement = document.createElement("a");
         cardLinkElement.classList.add("card-link");
-        cardLinkElement.href = project.card.link;
+        cardLinkElement.href = projects[i].card.link;
         const cardElement = document.createElement("div");
         cardElement.classList.add("card");
         // Populate card content
         cardElement.innerHTML = `
-          <img src="${project.card.image}" alt="Image Not Found">
+          <img src="${projects[i].card.image}" alt="Image Not Found">
           <div class="flexbox-2">
-            <h1>${project.title}</h1>
-            <p>${project.IDNUM}</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. 
-            Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. 
-            Praesent mauris.
-            </p>
+            <h1>${projects[i].title}</h1>
+            <p>${projects[i].IDNUM}</p>
+            <ul class="skill-list" id="skill-list-${projects[i].IDNUM}"></ul>
           </div>
         `;
         // Append the card content to the link
         cardLinkElement.innerHTML = cardElement.outerHTML;
         // Append the link to container_card
         container_card.appendChild(cardLinkElement);
-      });
+        skillList(`skill-list-${projects[i].IDNUM}`, projects[i].skills);
+      };
     } else {
       console.error("Error: 'projects' is not an array or is empty.");
     }
@@ -159,8 +156,6 @@ function generateFeaturedProjects(projects) {
     if (Array.isArray(projects) && projects.length > 0) {
       // Sort the projects based on the 'order' property
       projects.sort((a, b) => (a.order || Infinity) - (b.order || Infinity));
-
-
       for (let i = 0; i < projects.length; i++) {
         // Exclude projects
         if (projects[i].exclude || (projects[i].order>3)) {
@@ -174,7 +169,10 @@ function generateFeaturedProjects(projects) {
           <div class="collapsible-item">
             <a href="#" class="collapsible-title" onclick="collapsibleClick('tab${i}')">
               <img src="${projects[i].card.image}" alt="Image Not Found" style="width:250px;height:250px;border-radius:10px;">
-              <h1>${projects[i].title}</h1>
+              <div style="display:flex;flex-direction:column;align-items:start;justify-content:center;padding:15px;">
+                <h1>${projects[i].title}</h1>
+                <ul class="skill-list" id="skill-list-${projects[i].IDNUM}"></ul>
+              </div>
             </a>
             <div id="tab${i}"  class="collapsible-content" style="max-height:0px">
               <p>Lorem ipsum dolor...</p>
@@ -182,6 +180,7 @@ function generateFeaturedProjects(projects) {
             </div>
         `;
         container_card.appendChild(cardElement);
+        skillList(`skill-list-${projects[i].IDNUM}`, projects[i].skills);
       };
       const archiveLink = document.createElement("div");
       archiveLink.classList.add("collapsible")
@@ -204,4 +203,22 @@ function collapsibleClick(content) {
   } else {
     element.style.maxHeight = '0px'
   }
+}
+
+function skillList(content, skills) {
+  const element = document.getElementById(content);
+  const sub_element = document.createElement('div');
+  sub_element.classList.add("skill-list")
+  var list = [];
+  for (let i=0; i<skills.length; i++) {
+    list.push(`<li class="keep">${skills[i]}</li>`)
+  }
+  sub_element.innerHTML = `
+    ${list}
+  `;
+  var listItemsToKeep = Array.from(sub_element.children).filter(item => item.classList.contains("keep"));
+  console.log(listItemsToKeep);
+  listItemsToKeep.forEach(item => {
+    element.appendChild(item);
+  });
 }

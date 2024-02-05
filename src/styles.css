@@ -214,7 +214,7 @@ nav a:hover::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10em 20vw;
+  margin: 10vh 20vw;
 }
 
 .card {
@@ -226,7 +226,7 @@ nav a:hover::after {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 .card img {
@@ -312,7 +312,8 @@ nav a:hover::after {
 }
 .collapsible-title h1 {
   color: inherit;
-  padding: 15px;
+  padding: 15px 0;
+  margin: 0;
 }
 .collapsible-title h3 {
   padding: 0;
@@ -322,4 +323,20 @@ nav a:hover::after {
 .collapsible-title:hover{
   background-color: white;
   color:var(--title-text-color-1);
+}
+.skill-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 2.5em;
+  display: flex;
+  flex-direction: row;
+}
+.skill-list li {
+  color: white;
+  background-color: black;
+  padding: 5px 15px;
+  margin: 0 5px;
+  border-radius: 15px;
 }
