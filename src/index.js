@@ -221,7 +221,6 @@ function skillList(content, skills) {
     ${list}
   `;
   var listItemsToKeep = Array.from(sub_element.children).filter(item => item.classList.contains("keep"));
-  console.log(listItemsToKeep);
   listItemsToKeep.forEach(item => {
     element.appendChild(item);
   });
