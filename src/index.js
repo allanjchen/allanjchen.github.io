@@ -98,7 +98,7 @@ function generateProjectCards(projects) {
           <img src="${projects[i].card.image}" alt="Image Not Found">
           <div class="flexbox-2">
             <h1>${projects[i].title}</h1>
-            <p>${projects[i].IDNUM}</p>
+            <p class="subtitle">${projects[i].subtitle}</p>
             <ul class="skill-list" id="skill-list-${projects[i].IDNUM}"></ul>
           </div>
         `;
@@ -135,12 +135,15 @@ function generateProjectPages(projects) {
               <img src="${projects[i].page.image_main}" alt="Image Not Found" style="width:600px;height:600px;border-radius:10px;">
               <div class="flexbox-1">
                 <h1>${projects[i].title}</h1>
+                <p class="subtitle">${projects[i].subtitle}</p>
+                <ul class="skill-list" id="skill-list-${projects[i].IDNUM}"></ul>
                 <p>${projects[i].page.description}</p>
               </div>
             </div>
             `;
           // Append the container to container_page
           container_page.appendChild(pageElement);
+          skillList(`skill-list-${projects[i].IDNUM}`, projects[i].skills);
       } else {
         console.error("Error: 'projects' is not an array or is empty.");
       }
@@ -171,6 +174,7 @@ function generateFeaturedProjects(projects) {
               <img src="${projects[i].card.image}" alt="Image Not Found" style="width:250px;height:250px;border-radius:10px;">
               <div style="display:flex;flex-direction:column;align-items:start;justify-content:center;padding:15px;">
                 <h1>${projects[i].title}</h1>
+                <p class="subtitle">${projects[i].subtitle}</p>
                 <ul class="skill-list" id="skill-list-${projects[i].IDNUM}"></ul>
               </div>
             </a>

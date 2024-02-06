@@ -165,6 +165,15 @@ nav a:hover::after {
 #sub-3 {
   min-height: 75vh;
 }
+#sub-4 a {
+  text-decoration: none;
+  font-size: 2.5em;
+  color: var(--body-text-color-1);
+  padding: 10px 0;
+}
+#sub-4 a:hover {
+  color: var(--title-text-color-1);
+}
 .flexbox-1 {
   background-color: var(--bg-color-1);
   color:var(--body-text-color-1);
@@ -177,7 +186,7 @@ nav a:hover::after {
 }
 .flexbox-1 h1 {
   margin: 0;
-  padding: 5px;
+  padding: 5px 5px 5px 0;
   font-size: 5em;
   text-align: left;
 }
@@ -201,7 +210,7 @@ nav a:hover::after {
   padding: 0;
   text-align: left;
   color: var(--title-text-color-1);
-  font-size: 3em;
+  font-size: 5em;
 }
 .flexbox-2 p {
   margin: 0;
@@ -312,7 +321,7 @@ nav a:hover::after {
 }
 .collapsible-title h1 {
   color: inherit;
-  padding: 15px 0;
+  padding: 15px 0 0 0;
   margin: 0;
 }
 .collapsible-title h3 {
@@ -321,15 +330,14 @@ nav a:hover::after {
   font-size: 2rem;
 }
 .collapsible-title:hover{
-  background-color: white;
-  color:var(--title-text-color-1);
+  background-color: silver;
 }
 .skill-list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 5px 0;
   text-decoration: none;
-  font-size: 2.5em;
+  font-size: 2em;
   display: flex;
   flex-direction: row;
 }
@@ -339,4 +347,10 @@ nav a:hover::after {
   padding: 5px 15px;
   margin: 0 5px;
   border-radius: 15px;
+}
+.subtitle {
+  color: white;
+  padding: 0 5px 5px 5px;
+  margin: 0;
+  font-size: 3em;
 }
