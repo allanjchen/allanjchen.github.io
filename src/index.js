@@ -95,7 +95,9 @@ function generateProjectCards(projects) {
         cardElement.classList.add("card");
         // Populate card content
         cardElement.innerHTML = `
-          <img src="${projects[i].card.image}" alt="Image Not Found">
+          <div style="width:250px;height:250px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;">
+            <img src="${projects[i].card.image}" alt="Image Not Found" style="max-width:250px;max-height:250px;border-radius:4px;border:2.5px solid black;">
+          </div>
           <div class="flexbox-2">
             <h1>${projects[i].title}</h1>
             <p class="subtitle">${projects[i].subtitle}</p>
@@ -171,16 +173,18 @@ function generateFeaturedProjects(projects) {
         cardElement.innerHTML = `
           <div class="collapsible-item">
             <a href="#" class="collapsible-title" onclick="collapsibleClick('tab${i}')">
-              <img src="${projects[i].card.image}" alt="Image Not Found" style="width:250px;height:250px;border-radius:10px;">
-              <div style="display:flex;flex-direction:column;align-items:start;justify-content:center;padding:15px;">
+              <div style="width:250px;height:250px;display:flex;align-items:center;justify-content:center;">
+                <img src="${projects[i].card.image}" alt="Image Not Found" style="max-width:250px;max-height:250px;border-radius:10px;">
+              </div>
+                <div style="display:flex;flex-direction:column;align-items:start;justify-content:center;padding:15px;">
                 <h1>${projects[i].title}</h1>
                 <p class="subtitle">${projects[i].subtitle}</p>
                 <ul class="skill-list" id="skill-list-${projects[i].IDNUM}"></ul>
               </div>
             </a>
             <div id="tab${i}"  class="collapsible-content" style="max-height:0px">
-              <p>Lorem ipsum dolor...</p>
-              <a href=${projects[i].card.link} style="margin:10px;">View Project Page</a>
+              <p>${projects[i].card.description}</p>
+              <a href=${projects[i].card.link} style="margin:10px;">Learn More</a>
             </div>
         `;
         container_card.appendChild(cardElement);
