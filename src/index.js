@@ -134,7 +134,7 @@ function generateProjectPages(projects) {
             <a href = "/pages/project_archive.html" class="button-1 b1-slide-right" style="margin:15px 0;">Return To Project Archive</a>
           </div>
           <div style="display:flex;flex-direction:row;width:60vw;">
-              <img src="${projects[i].page.image_main}" alt="Image Not Found" style="width:600px;height:600px;border-radius:10px;">
+              <img src="${projects[i].page.image_main}" alt="Image Not Found" style="width:600px;height:600px;border-radius:10px;border:2.5px solid black;">
               <div class="flexbox-1">
                 <h1>${projects[i].title}</h1>
                 <p class="subtitle">${projects[i].subtitle}</p>

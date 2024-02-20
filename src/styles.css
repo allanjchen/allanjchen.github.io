@@ -285,6 +285,7 @@ nav a:hover::after {
 .collapsible-content p {
   padding: 15px;
   font-size: 30px;
+  margin: 10px 0 0 0;
 }
 .collapsible-content a {
   text-decoration: none;
