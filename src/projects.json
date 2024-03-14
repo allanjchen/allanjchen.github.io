@@ -16,7 +16,12 @@
         "page": {
           "description": "First rocket I worked on, designed and flown during ENGR 96R course at UCLA. Designed using SOLIDWORKS and OpenRocket",
           "image_main": "/media/68749064577__3A02CD1B-18F9-4463-BD21-578DB1E89ABE.jpg",
-          "image_carousel":{}
+          "image_carousel":{},
+          "sections":{
+            "num":1,
+            "descriptions":[],
+            "images":[]
+          }
         }
       },
       {
@@ -35,7 +40,12 @@
         "page": {
           "description": "Designed and flown during ENGR 96R course at UCLA. Using an AEROTECH 29MM MOTOR - G80T-13, the rocket flew to ~2000m and recovered successfully.",
           "image_main": "/media/IMG_1954.jpg",
-          "image_carousel":{}
+          "image_carousel":{},
+          "sections":{
+            "num":1,
+            "descriptions":[],
+            "images":[]
+          }
         }
       },
       {
@@ -54,7 +64,12 @@
         "page": {
           "description": "Served as feed system lead engineer on the hybrid rocket <i>Casanova</i>, leading a team of 5 student engineers in the design, manufacturing, and testing of the rocket's nitrous feed system.",
           "image_main": "/media/IMG_1261.jpg",
-          "image_carousel":{}
+          "image_carousel":{},
+          "sections":{
+            "num":1,
+            "descriptions":[],
+            "images":[]
+          }
         }
       },
       {
@@ -73,7 +88,12 @@
         "page": {
           "description": "This is the content of card 4",
           "image_main": "/media/placeholder-square.png",
-          "image_carousel":{}
+          "image_carousel":{},
+          "sections":{
+            "num":1,
+            "descriptions":[],
+            "images":[]
+          }
         }
       }
   ]

@@ -138,15 +138,18 @@ function generateProjectPages(projects) {
               <img src="${projects[i].page.image_main}" alt="Image Not Found" style="width:600px;height:600px;border-radius:10px;border:2.5px solid black;">
               <div class="flexbox-1">
                 <h1>${projects[i].title}</h1>
-                <p class="subtitle">${projects[i].subtitle}</p>
+                <p class="subtitle" style="color:black;">${projects[i].subtitle}</p>
                 <ul class="skill-list" id="skill-list-${projects[i].IDNUM}"></ul>
                 <p>${projects[i].page.description}</p>
               </div>
-            </div>
-            `;
+          </div>
+          `;
           // Append the container to container_page
           container_page.appendChild(pageElement);
           skillList(`skill-list-${projects[i].IDNUM}`, projects[i].skills);
+          for (let j=0; j<projects[i].page.sections.num; j++) {
+            console.log("check");
+          }
       } else {
         console.error("Error: 'projects' is not an array or is empty.");
       }
