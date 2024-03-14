@@ -96,11 +96,12 @@ function generateProjectCards(projects) {
         // Populate card content
         cardElement.innerHTML = `
           <div style="width:250px;height:250px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;">
-            <img src="${projects[i].card.image}" alt="Image Not Found" style="max-width:250px;max-height:250px;border-radius:4px;border:2.5px solid black;">
+            <img src="${projects[i].card.image}" alt="Image Not Found" style="max-width:250px;max-height:250px;border-radius:4px;border:2.5px solid black;pointer-events:none;">
           </div>
-          <div class="flexbox-2">
+          <div class="flexbox-2" style="pointer-events:none;">
             <h1>${projects[i].title}</h1>
             <p class="subtitle">${projects[i].subtitle}</p>
+            <p class="subtitle" style="font-size:2em;color:black;">${projects[i].date}</p>
             <ul class="skill-list" id="skill-list-${projects[i].IDNUM}"></ul>
           </div>
         `;
@@ -163,7 +164,7 @@ function generateFeaturedProjects(projects) {
       projects.sort((a, b) => (a.order || Infinity) - (b.order || Infinity));
       for (let i = 0; i < projects.length; i++) {
         // Exclude projects
-        if (projects[i].exclude || (projects[i].order>3)) {
+        if (projects[i].exclude || !(projects[i].feature)) {
           continue;
         }
         // Create cards
@@ -179,6 +180,7 @@ function generateFeaturedProjects(projects) {
                 <div style="display:flex;flex-direction:column;align-items:start;justify-content:center;padding:15px;">
                 <h1>${projects[i].title}</h1>
                 <p class="subtitle">${projects[i].subtitle}</p>
+                <p class="subtitle">${projects[i].date}</p>
                 <ul class="skill-list" id="skill-list-${projects[i].IDNUM}"></ul>
               </div>
             </a>
