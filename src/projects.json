@@ -6,7 +6,7 @@
         "date":"[Sep 2022]",
         "order": 3, "exclude": false, "feature": true,
         "tags": ["tag2", "tag3"],
-        "skills": ["CAD","3D Printing","OpenRocket"],
+        "skills": ["SOLIDWORKS","3D Printing","OpenRocket"],
 
         "card": {
           "description": "First rocket I worked on, designed and flown during E96R course at UCLA. Designed using SOLIDWORKS and OpenRocket.",
@@ -16,10 +16,12 @@
         "page": {
           "description": "First rocket I worked on, designed and flown during ENGR 96R course at UCLA. Designed using SOLIDWORKS and OpenRocket",
           "image_main": "/media/68749064577__3A02CD1B-18F9-4463-BD21-578DB1E89ABE.jpg",
-          "image_carousel":{},
+          "additional_images":[],
+          "additional_text":"",
           "sections":[
-            ["Hello",1],
-            ["World",2]
+            ["Inital OpenRocket model","/media/68664611944__EF93BD2B-19C1-4565-B933-BAFCC89B578C.jpg"],
+            ["First iteration","/media/68737092366__A0D16472-BBA2-4AF0-9B82-FC899A011AD8.jpg"],
+            ["First CAD model","/media/68722797229__025091AD-2FA9-48C0-8755-9A891C0B3FE6.jpg"]
           ]
         }
       },
@@ -29,7 +31,7 @@
         "date":"[Sep 2022 - Dec 2022]",
         "order": 2, "exclude": false, "feature": true,
         "tags": ["tag2", "tag3"],
-        "skills": ["CAD","Composite Layups", "3D Printing"],
+        "skills": ["SOLIDWORKS","Composite Layups", "3D Printing"],
 
         "card": {
           "description": "Designed and flown during ENGR 96R course at UCLA. Using an AEROTECH 29MM MOTOR - G80T-13, the rocket flew to ~2000m and recovered successfully.",
@@ -39,10 +41,11 @@
         "page": {
           "description": "Designed and flown during ENGR 96R course at UCLA. Using an AEROTECH 29MM MOTOR - G80T-13, the rocket flew to ~2000m and recovered successfully.",
           "image_main": "/media/IMG_1954.jpg",
-          "image_carousel":{},
+          "additional_images":[],
+          "additional_text":"",
           "sections":[
-            ["Hello",1],
-            ["World",2]
+            ["Hello","/media/68979697058__DC84F3AC-52D8-43DC-9CB9-C617D1F158B8.jpg"],
+            ["World","/media/IMG_0758.JPG"]
           ]
         }
       },
@@ -52,7 +55,7 @@
         "date":"[Dec 2022 - June 2023]",
         "order": 1, "exclude": false, "feature": true,
         "tags": ["tag2", "tag3"],
-        "skills": ["Machining","CAD","Fluid Mechanics","FEA"],
+        "skills": ["Machining","SOLIDWORKS","Fluid Mechanics","ANSYS Mechanical"],
 
         "card": {
           "description": "Served as feed system lead engineer on the hybrid rocket <i>Casanova</i>, leading a team of 5 student engineers in the design, manufacturing, and testing of the rocket's nitrous feed system.",
@@ -62,34 +65,36 @@
         "page": {
           "description": "Served as feed system lead engineer on the hybrid rocket <i>Casanova</i>, leading a team of 5 student engineers in the design, manufacturing, and testing of the rocket's nitrous feed system.",
           "image_main": "/media/IMG_1261.jpg",
-          "image_carousel":{},
+          "additional_images":[],
+          "additional_text":"",
           "sections":[
-            ["Served as feed system lead engineer on the hybrid rocket <i>Casanova</i>, leading a team of 5 student engineers in the design, manufacturing, and testing of the rocket's nitrous feed system.","/media/placeholder-square.png"],
-            ["Served as feed system lead engineer on the hybrid rocket <i>Casanova</i>, leading a team of 5 student engineers in the design, manufacturing, and testing of the rocket's nitrous feed system.","/media/placeholder-square.png"],
-            ["Served as feed system lead engineer on the hybrid rocket <i>Casanova</i>, leading a team of 5 student engineers in the design, manufacturing, and testing of the rocket's nitrous feed system.","/media/placeholder-square.png"]
+            ["Machining some endcaps.","/media/IMG_1166.jpg"],
+            ["The finished product.","/media/IMG_1240.jpg"],
+            ["Pressure vessel assembly completed and prepared for assembly.","/media/IMG_1247.jpg"]
           ]
         }
       },
       {
         "IDNUM": 4,
-        "title":"Project 4", "subtitle":"Location",
-        "date":"[N/A]",
-        "order": 4, "exclude": true, "feature": true,
+        "title":"Introduction to Drones", "subtitle":"Introduction to Engineering Design: Drones",
+        "date":"[Jan 2024 - March 2024]",
+        "order": 4, "exclude": false, "feature": false,
         "tags": ["tag2", "tag3"],
-        "skills": ["skill1","skill2"],
+        "skills": ["Fusion 360","QGroundControl", "Laser Cutting"],
 
         "card": {
-          "description": "This is the content of card 4",
-          "image": "/media/placeholder-square.png",
+          "description": "First two drone projects, building a kit drone with a small team and making improvements implemented in our own design.",
+          "image": "/media/IMG_1902.jpg",
           "link": "/pages/project_pages/project_page_4.html"
         },
         "page": {
-          "description": "This is the content of card 4",
-          "image_main": "/media/placeholder-square.png",
-          "image_carousel":{},
+          "description": "First two drone projects, building a kit drone with a small team and making improvements implemented in our own design.",
+          "image_main": "/media/IMG_1902.jpg",
+          "additional_images":[],
+          "additional_text":"",
           "sections":[
-            ["Hello",1],
-            ["World",2]
+            ["Completed kit <i>Basicopter</i>.","/media/IMG_1901.jpg"],
+            ["CAD model of our final project drone.","/media/B7FF0A95-006D-4AFB-8D91-21C3274B64CA.jpg"]
           ]
         }
       }

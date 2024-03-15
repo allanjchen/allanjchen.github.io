@@ -131,15 +131,28 @@ function generateProjectPages(projects) {
           pageElement.classList.add("page");
           // Populate page content
           var sections = [];
-          let a="", b="";
-          for (let j=0; j<projects[i].page.sections.length; j++) {
-            a = `<p style="text-align:center;font-size:2em;padding:5px;margin:0;width:40vw;">${projects[i].page.sections[j][0]}</p>`;
-            b = `<img src="${projects[i].page.sections[j][1]}" alt="Image Not Found" style="width:250px;height:250px;margin:10px;">`;
-            if (j%2 == 1) {[a, b] = [b, a];}
-            sections.push(`<div style="display:flex;flex-direction:row;align-items:center;justify-content:center;padding:2.5vh 0 0 0;">
-            ${a} ${b}</div>`);
+          if (projects[i].page.sections.length != 0) {
+            let a="", b="";
+            for (let j=0; j<projects[i].page.sections.length; j++) {
+              a = `<p style="text-align:center;font-size:2em;padding:5px;margin:0;width:40vw;">${projects[i].page.sections[j][0]}</p>`;
+              b = `<img src="${projects[i].page.sections[j][1]}" alt="Image Not Found" style="max-width:15vw;max-height:20vw;margin:10px;border-radius:4px;border:2.5px solid black;">`;
+              if (j%2 == 1) {[a, b] = [b, a];}
+              sections.push(`<div style="display:flex;flex-direction:row;align-items:center;justify-content:center;padding:2vh 0 0 0;">
+              ${a} <div style="min-width:20vw;">${b}</div> </div>`);
+            }
           }
           sections = sections.map(item => item).join('');
+          var additional_images = [];
+          var addition1 = "";
+          if (projects[i].page.additional_images.length != 0) {
+            for (let k=0; k<projects[i].page.additional_images.length; k++) {
+              additional_images.push(`<img src="${projects[i].page.additional_images[k]}" alt="Image Not Found" style="max-width:15vw;max-height:20vw;margin:15px;border-radius:4px;border:2.5px solid black;"></img>`);
+            }
+          }
+          additional_images = additional_images.map(item => item).join('');
+          addition1 = 
+           `<div style="display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;padding:2vh 0 0 0;">
+              ${additional_images}</div>`;
           pageElement.innerHTML = `
           <div style="display:flex;flex-direction:row;width:60vw;">
             <a href = "/pages/project_archive.html" class="button-1 b1-slide-right" style="margin:15px 0;">Return To Project Archive</a>
@@ -149,11 +162,16 @@ function generateProjectPages(projects) {
               <div class="flexbox-1">
                 <h1>${projects[i].title}</h1>
                 <p class="subtitle" style="color:black;">${projects[i].subtitle}</p>
+                <p class="subtitle" style="color:black;">${projects[i].date}</p>
                 <ul class="skill-list" id="skill-list-${projects[i].IDNUM}"></ul>
                 <p>${projects[i].page.description}</p>
               </div>
           </div>
           ${sections}
+          <div style="display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;padding:2vh 0 0 0;">
+            <p style="font-size:2em;">${projects[i].page.additional_text}</p>
+          </div>
+          ${addition1}
           `;
           // Append the container to container_page
           container_page.appendChild(pageElement);
