@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
           navbar.style.top = "0";
       } else {
           // Scrolling down
-          navbar.style.top = "-1000px";
+          navbar.style.top = "-100vh";
       }
       prevScrollPos = currentScrollPos;
   }
@@ -95,13 +95,13 @@ function generateProjectCards(projects) {
         cardElement.classList.add("card");
         // Populate card content
         cardElement.innerHTML = `
-          <div style="width:250px;height:250px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;">
-            <img src="${projects[i].card.image}" alt="Image Not Found" style="max-width:250px;max-height:250px;border-radius:4px;border:2.5px solid black;pointer-events:none;">
+          <div style="width:15vw;height:15vw;display:flex;align-items:center;justify-content:center;flex:0 0 auto;">
+            <img src="${projects[i].card.image}" alt="Image Not Found" style="max-width:15vw;max-height:15vw;border-radius:0.25vw;border:0.1vw solid black;pointer-events:none;">
           </div>
           <div class="flexbox-2" style="pointer-events:none;">
             <h1>${projects[i].title}</h1>
             <p class="subtitle">${projects[i].subtitle}</p>
-            <p class="subtitle" style="font-size:2em;color:black;">${projects[i].date}</p>
+            <p class="subtitle" style="font-size:1vw;color:black;">${projects[i].date}</p>
             <ul class="skill-list" id="skill-list-${projects[i].IDNUM}"></ul>
           </div>
         `;
@@ -134,8 +134,8 @@ function generateProjectPages(projects) {
           if (projects[i].page.sections.length != 0) {
             let a="", b="";
             for (let j=0; j<projects[i].page.sections.length; j++) {
-              a = `<p style="text-align:center;font-size:2em;padding:5px;margin:0;width:40vw;">${projects[i].page.sections[j][0]}</p>`;
-              b = `<img src="${projects[i].page.sections[j][1]}" alt="Image Not Found" style="max-width:15vw;max-height:20vw;margin:10px;border-radius:4px;border:2.5px solid black;">`;
+              a = `<p style="text-align:center;font-size:1vw;padding:2vw;margin:0;width:40vw;">${projects[i].page.sections[j][0]}</p>`;
+              b = `<img src="${projects[i].page.sections[j][1]}" alt="Image Not Found" style="max-width:17.5vw;max-height:17.5vw;margin:2vw;border-radius:0.25vw;border:0.1vw solid black;">`;
               if (j%2 == 1) {[a, b] = [b, a];}
               sections.push(`<div style="display:flex;flex-direction:row;align-items:center;justify-content:center;padding:2vh 0 0 0;">
               ${a} <div style="min-width:20vw;">${b}</div> </div>`);
@@ -146,19 +146,19 @@ function generateProjectPages(projects) {
           var addition1 = "";
           if (projects[i].page.additional_images.length != 0) {
             for (let k=0; k<projects[i].page.additional_images.length; k++) {
-              additional_images.push(`<img src="${projects[i].page.additional_images[k]}" alt="Image Not Found" style="max-width:15vw;max-height:20vw;margin:15px;border-radius:4px;border:2.5px solid black;"></img>`);
+              additional_images.push(`<img src="${projects[i].page.additional_images[k]}" alt="Image Not Found" style="max-width:17.5vw;max-height:17.5vw;margin:2vw;border-radius:0.25vw;border:0.1vw solid black;"></img>`);
             }
           }
           additional_images = additional_images.map(item => item).join('');
           addition1 = 
-           `<div style="display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;padding:2vh 0 0 0;">
+           `<div style="display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;padding:1.5vh 0 0 0;">
               ${additional_images}</div>`;
           pageElement.innerHTML = `
           <div style="display:flex;flex-direction:row;width:60vw;">
-            <a href = "/pages/project_archive.html" class="button-1 b1-slide-right" style="margin:15px 0;">Return To Project Archive</a>
+            <a href = "/pages/project_archive.html" class="button-1 b1-slide-right" style="margin:0.5vw 0;">Return To Project Archive</a>
           </div>
           <div style="display:flex;flex-direction:row;width:60vw;">
-              <img src="${projects[i].page.image_main}" alt="Image Not Found" style="width:600px;height:600px;border-radius:10px;border:2.5px solid black;">
+              <img src="${projects[i].page.image_main}" alt="Image Not Found" style="width:20vw;height:20vw;border-radius:0.25vw;border:0.1vw solid black;">
               <div class="flexbox-1">
                 <h1>${projects[i].title}</h1>
                 <p class="subtitle" style="color:black;">${projects[i].subtitle}</p>
@@ -168,8 +168,8 @@ function generateProjectPages(projects) {
               </div>
           </div>
           ${sections}
-          <div style="display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;padding:2vh 0 0 0;">
-            <p style="font-size:2em;">${projects[i].page.additional_text}</p>
+          <div style="display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;padding:1.5vh 0 0 0;">
+            <p style="font-size:1vw;">${projects[i].page.additional_text}</p>
           </div>
           ${addition1}
           `;
@@ -203,10 +203,10 @@ function generateFeaturedProjects(projects) {
         cardElement.innerHTML = `
           <div class="collapsible-item">
             <a href="#" class="collapsible-title" onclick="collapsibleClick('tab${i}')">
-              <div style="width:250px;height:250px;display:flex;align-items:center;justify-content:center;">
-                <img src="${projects[i].card.image}" alt="Image Not Found" style="max-width:250px;max-height:250px;border-radius:10px;">
+              <div style="width:10vw;height:10vw;display:flex;align-items:center;justify-content:center;">
+                <img src="${projects[i].card.image}" alt="Image Not Found" style="max-width:10vw;max-height:10vw;border-radius:0.25vw;border:0.1vw solid black;">
               </div>
-                <div style="display:flex;flex-direction:column;align-items:start;justify-content:center;padding:15px;">
+                <div style="display:flex;flex-direction:column;align-items:start;justify-content:center;padding:0.5vw;">
                 <h1>${projects[i].title}</h1>
                 <p class="subtitle">${projects[i].subtitle}</p>
                 <p class="subtitle">${projects[i].date}</p>
@@ -215,7 +215,7 @@ function generateFeaturedProjects(projects) {
             </a>
             <div id="tab${i}"  class="collapsible-content" style="max-height:0px">
               <p>${projects[i].card.description}</p>
-              <a href=${projects[i].card.link} style="margin:10px;">Learn More</a>
+              <a href=${projects[i].card.link} style="margin:1vw;">Learn More</a>
             </div>
         `;
         container_card.appendChild(cardElement);
@@ -238,7 +238,7 @@ function generateFeaturedProjects(projects) {
 function collapsibleClick(content) {
   var element = document.getElementById(content);
   if (element.style.maxHeight == '0px') {
-    element.style.maxHeight = '250px';
+    element.style.maxHeight = '7.5vw';
   } else {
     element.style.maxHeight = '0px'
   }
