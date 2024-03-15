@@ -130,6 +130,16 @@ function generateProjectPages(projects) {
           const pageElement = document.createElement("div");
           pageElement.classList.add("page");
           // Populate page content
+          var sections = [];
+          let a="", b="";
+          for (let j=0; j<projects[i].page.sections.length; j++) {
+            a = `<p style="text-align:center;font-size:2em;padding:5px;margin:0;width:40vw;">${projects[i].page.sections[j][0]}</p>`;
+            b = `<img src="${projects[i].page.sections[j][1]}" alt="Image Not Found" style="width:250px;height:250px;margin:10px;">`;
+            if (j%2 == 1) {[a, b] = [b, a];}
+            sections.push(`<div style="display:flex;flex-direction:row;align-items:center;justify-content:center;padding:2.5vh 0 0 0;">
+            ${a} ${b}</div>`);
+          }
+          sections = sections.map(item => item).join('');
           pageElement.innerHTML = `
           <div style="display:flex;flex-direction:row;width:60vw;">
             <a href = "/pages/project_archive.html" class="button-1 b1-slide-right" style="margin:15px 0;">Return To Project Archive</a>
@@ -143,13 +153,11 @@ function generateProjectPages(projects) {
                 <p>${projects[i].page.description}</p>
               </div>
           </div>
+          ${sections}
           `;
           // Append the container to container_page
           container_page.appendChild(pageElement);
           skillList(`skill-list-${projects[i].IDNUM}`, projects[i].skills);
-          for (let j=0; j<projects[i].page.sections.num; j++) {
-            console.log("check");
-          }
       } else {
         console.error("Error: 'projects' is not an array or is empty.");
       }
@@ -224,7 +232,7 @@ function skillList(content, skills) {
   sub_element.classList.add("skill-list")
   var list = [];
   for (let i=0; i<skills.length; i++) {
-    list.push(`<li class="keep">${skills[i]}</li>`)
+    list.push(`<li class="keep">${skills[i]}</li>`);
   }
   sub_element.innerHTML = `
     ${list}
