@@ -45,7 +45,8 @@
           "additional_text":"",
           "sections":[
             ["Hello","/media/68979697058__DC84F3AC-52D8-43DC-9CB9-C617D1F158B8.jpg"],
-            ["World","/media/IMG_0758.JPG"]
+            ["World","/media/IMG_0758.JPG"],
+            ["Fiberglass body tube layup","/media/68921239397__8D63FC69-B419-435C-A2DF-FC8DA6695DB1.jpg"]
           ]
         }
       },
@@ -95,6 +96,28 @@
           "sections":[
             ["Completed kit <i>Basicopter</i>.","/media/IMG_1901.jpg"],
             ["CAD model of our final project drone.","/media/B7FF0A95-006D-4AFB-8D91-21C3274B64CA.jpg"]
+          ]
+        }
+      },
+      {
+        "IDNUM": 5,
+        "title":"Machining", "subtitle":"Student Machine Shop",
+        "date":"[All The Time]",
+        "order": 5, "exclude": false, "feature": false,
+        "tags": ["tag2", "tag3"],
+        "skills": ["Lathe","Mill","3-axis CNC Mill","TIG Welding"],
+
+        "card": {
+          "description": "A collection of various machining things.",
+          "image": "/media/IMG_1759.JPG",
+          "link": "/pages/project_pages/project_page_5.html"
+        },
+        "page": {
+          "description": "A collection of various machining things.",
+          "image_main": "/media/IMG_1759.JPG",
+          "additional_images":["/media/IMG_1279.jpg","/media/IMG_1964.jpg","/media/IMG_1856.jpg","/media/IMG_1969.jpg","/media/IMG_1923.jpg","/media/IMG_1965.jpg"],
+          "additional_text":"",
+          "sections":[
           ]
         }
       }
