@@ -4,7 +4,7 @@
         "IDNUM": 1,
         "title":"3D Printed Rocket", "subtitle":"Introduction to Engineering Design: Rockets",
         "date":"[Sep 2022]",
-        "order": 3, "exclude": false, "feature": true,
+        "order": 4, "exclude": false, "feature": true,
         "tags": ["tag2", "tag3"],
         "skills": ["SOLIDWORKS","3D Printing","OpenRocket"],
 
@@ -29,7 +29,7 @@
         "IDNUM": 2,
         "title":"High Powered Rocket", "subtitle":"Introduction to Engineering Design: Rockets",
         "date":"[Sep 2022 - Dec 2022]",
-        "order": 2, "exclude": false, "feature": true,
+        "order": 3, "exclude": false, "feature": true,
         "tags": ["tag2", "tag3"],
         "skills": ["SOLIDWORKS","Composite Layups", "3D Printing"],
 
@@ -54,7 +54,7 @@
         "IDNUM": 3,
         "title":"Hybrid Feed System", "subtitle":"UCLA Rocket Project ",
         "date":"[Dec 2022 - June 2023]",
-        "order": 1, "exclude": false, "feature": true,
+        "order": 2, "exclude": false, "feature": true,
         "tags": ["tag2", "tag3"],
         "skills": ["Machining","SOLIDWORKS","Fluid Mechanics","ANSYS Mechanical"],
 
@@ -79,7 +79,7 @@
         "IDNUM": 4,
         "title":"Introduction to Drones", "subtitle":"Introduction to Engineering Design: Drones",
         "date":"[Jan 2024 - March 2024]",
-        "order": 4, "exclude": false, "feature": false,
+        "order": 100, "exclude": false, "feature": false,
         "tags": ["tag2", "tag3"],
         "skills": ["Fusion 360","QGroundControl", "Laser Cutting"],
 
@@ -103,7 +103,7 @@
         "IDNUM": 5,
         "title":"Machining", "subtitle":"Student Machine Shop",
         "date":"[All The Time]",
-        "order": 5, "exclude": false, "feature": false,
+        "order": 100, "exclude": false, "feature": false,
         "tags": ["tag2", "tag3"],
         "skills": ["Lathe","Mill","3-axis CNC Mill","TIG Welding"],
 
@@ -111,6 +111,28 @@
           "description": "A collection of various machining things.",
           "image": "/media/IMG_1759.JPG",
           "link": "/pages/project_pages/project_page_5.html"
+        },
+        "page": {
+          "description": "A collection of various machining things.",
+          "image_main": "/media/IMG_1759.JPG",
+          "additional_images":["/media/IMG_1279.jpg","/media/IMG_1964.jpg","/media/IMG_1856.jpg","/media/IMG_1969.jpg","/media/IMG_1923.jpg","/media/IMG_1965.jpg"],
+          "additional_text":"",
+          "sections":[
+          ]
+        }
+      },
+      {
+        "IDNUM": 6,
+        "title":"Thrust Vectoring Liquid Rocket", "subtitle":"Self-Guided Project",
+        "date":"[Jan 2023 - Present]",
+        "order": 1, "exclude": true, "feature": false,
+        "tags": ["tag2", "tag3"],
+        "skills": ["CAD","FEA","MATLAB","Machining"],
+
+        "card": {
+          "description": "A collection of various machining things.",
+          "image": "/media/IMG_1759.JPG",
+          "link": "/pages/project_pages/project_page_6.html"
         },
         "page": {
           "description": "A collection of various machining things.",

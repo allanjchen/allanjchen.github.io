@@ -85,7 +85,7 @@ function generateProjectCards(projects) {
       for (let i = 0; i < projects.length; i++) {
         // Exclude projects
         if (projects[i].exclude) {
-          return;
+          continue;
         }
         // Create cards
         const cardLinkElement = document.createElement("a");
@@ -101,7 +101,7 @@ function generateProjectCards(projects) {
           <div class="flexbox-2" style="pointer-events:none;">
             <h1>${projects[i].title}</h1>
             <p class="subtitle">${projects[i].subtitle}</p>
-            <p class="subtitle" style="font-size:1vw;color:black;">${projects[i].date}</p>
+            <p class="subtitle" style="font-size:1.5em;color:black;">${projects[i].date}</p>
             <ul class="skill-list" id="skill-list-${projects[i].IDNUM}"></ul>
           </div>
         `;
@@ -134,7 +134,7 @@ function generateProjectPages(projects) {
           if (projects[i].page.sections.length != 0) {
             let a="", b="";
             for (let j=0; j<projects[i].page.sections.length; j++) {
-              a = `<p style="text-align:center;font-size:1vw;padding:2vw;margin:0;width:40vw;">${projects[i].page.sections[j][0]}</p>`;
+              a = `<p style="text-align:center;font-size:1.75em;padding:2vw;margin:0;width:40vw;">${projects[i].page.sections[j][0]}</p>`;
               b = `<img src="${projects[i].page.sections[j][1]}" alt="Image Not Found" style="max-width:17.5vw;max-height:17.5vw;margin:2vw;border-radius:0.25vw;border:0.1vw solid black;">`;
               if (j%2 == 1) {[a, b] = [b, a];}
               sections.push(`<div style="display:flex;flex-direction:row;align-items:center;justify-content:center;padding:2vh 0 0 0;">
@@ -164,12 +164,12 @@ function generateProjectPages(projects) {
                 <p class="subtitle" style="color:black;">${projects[i].subtitle}</p>
                 <p class="subtitle" style="color:black;">${projects[i].date}</p>
                 <ul class="skill-list" id="skill-list-${projects[i].IDNUM}"></ul>
-                <p>${projects[i].page.description}</p>
               </div>
           </div>
+          <p style="text-align:center;font-size:1.75em;padding:1.5vw;margin:0;width:60vw;">${projects[i].page.description}</p>
           ${sections}
           <div style="display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;padding:1.5vh 0 0 0;">
-            <p style="font-size:1vw;">${projects[i].page.additional_text}</p>
+            <p style="font-size:1.75em;">${projects[i].page.additional_text}</p>
           </div>
           ${addition1}
           `;
@@ -215,7 +215,7 @@ function generateFeaturedProjects(projects) {
             </a>
             <div id="tab${i}"  class="collapsible-content" style="max-height:0px">
               <p>${projects[i].card.description}</p>
-              <a href=${projects[i].card.link} style="margin:1vw;">Learn More</a>
+              <a href=${projects[i].card.link} style="margin:0.5vw;">Learn More</a>
             </div>
         `;
         container_card.appendChild(cardElement);
