@@ -238,7 +238,7 @@ function generateFeaturedProjects(projects) {
 function collapsibleClick(content) {
   var element = document.getElementById(content);
   if (element.style.maxHeight == '0px') {
-    element.style.maxHeight = '7.5vw';
+    element.style.maxHeight = '100vw';
   } else {
     element.style.maxHeight = '0px'
   }
