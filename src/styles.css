@@ -20,14 +20,6 @@
 }
 
 @media (max-width: 800px) {
-  #sub-1 {
-    flex-direction: column !important;
-    padding: 15vh 20vw;
-  }
-  #sub-1 img {
-    min-width: 40vw !important;
-    min-height: 40vw !important;
-  }
 }
 
 ::-webkit-scrollbar {
