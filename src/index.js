@@ -213,7 +213,7 @@ function generateFeaturedProjects(projects) {
                 <ul class="skill-list" id="skill-list-${projects[i].IDNUM}"></ul>
               </div>
             </a>
-            <div id="tab${i}"  class="collapsible-content" style="max-height:0px">
+            <div id="tab${i}"  class="collapsible-content" style="max-height:0px;">
               <p>${projects[i].card.description}</p>
               <a href=${projects[i].card.link} style="margin:0.5vw;">Learn More</a>
             </div>
