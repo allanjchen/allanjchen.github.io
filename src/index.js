@@ -268,11 +268,9 @@ function handleOrientationChange() {
   if (isLandscape || (window.innerWidth>800)) { 
     //landscape styling
     container.style.backgroundcolor = 'white';
-    console.log("landscape");
   } else {
     //portrait styling
     container.style.backgroundcolor = 'black';
-    console.log("portrait");
   }
 }
 handleOrientationChange();
