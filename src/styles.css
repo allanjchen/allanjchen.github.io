@@ -2,7 +2,7 @@
 :root {
   --bg-color-1: #dfd7ca;
   --title-text-color-1: #3d4548;
-  --body-text-color-1: #8498a8;
+  --body-text-color-1: #697783;
   --highlight-text-color: white; /*Find better color*/
   --feature-color-1: #cfcfcfa1;
 
@@ -17,9 +17,6 @@
   /* Add additional font weights and styles if needed */
   font-weight: 450;
   font-style: normal;
-}
-
-@media (max-width: 800px) {
 }
 
 ::-webkit-scrollbar {
@@ -94,6 +91,11 @@ p {
 .logo {
   float: left;
   padding: 0 2.5vw;
+}
+
+.logo img {
+  width: 3vw;
+  height: 3vw;
 }
 
 nav {
@@ -196,7 +198,7 @@ nav a:hover::after {
 .flexbox-1 p {
   margin: 0;
   padding: 0.25vw;
-  font-size: 2em;
+  font-size: 1.75em;
   text-align: left;
 }
 .flexbox-2 {
@@ -213,7 +215,7 @@ nav a:hover::after {
   padding: 0;
   text-align: left;
   color: var(--title-text-color-1);
-  font-size: 5em;
+  font-size: 4em;
 }
 .flexbox-2 p {
   margin: 0;
@@ -320,6 +322,7 @@ nav a:hover::after {
   color: inherit;
   padding: 0.1vw 0 0 0;
   margin: 0;
+  font-size: 7em;
 }
 .collapsible-title h3 {
   padding: 0;
@@ -345,6 +348,7 @@ nav a:hover::after {
   padding: 0.25vw 0.4vw;
   margin: 0.1vw 0.5vw 0.1vw 0;
   border-radius: 0.5vw;
+  font-size: 1em;
 }
 .subtitle {
   color: white;

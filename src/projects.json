@@ -4,7 +4,7 @@
         "IDNUM": 1,
         "title":"3D Printed Rocket", "subtitle":"Introduction to Engineering Design: Rockets",
         "date":"[Sep 2022]",
-        "order": 4, "exclude": false, "feature": true,
+        "order": 4, "exclude": false, "feature": false,
         "tags": ["tag2", "tag3"],
         "skills": ["SOLIDWORKS","3D Printing","OpenRocket"],
 
@@ -125,21 +125,26 @@
         "IDNUM": 6,
         "title":"Thrust Vectoring Liquid Rocket", "subtitle":"Self-Guided Project",
         "date":"[Jan 2023 - Present]",
-        "order": 1, "exclude": true, "feature": false,
+        "order": 1, "exclude": false, "feature": true,
         "tags": ["tag2", "tag3"],
-        "skills": ["CAD","FEA","MATLAB","Machining"],
+        "skills": ["CAD","FEA","MATLAB","CNC Machining"],
 
         "card": {
-          "description": "A collection of various machining things.",
-          "image": "/media/IMG_1759.JPG",
+          "description": "A nitrous oxide - ethanol liquid rocket, inspired by Halfcat Rocketry designs, intended for use as an active contols testbed.",
+          "image": "/media/JRS03298.jpg",
           "link": "/pages/project_pages/project_page_6.html"
         },
         "page": {
-          "description": "A collection of various machining things.",
-          "image_main": "/media/IMG_1759.JPG",
-          "additional_images":["/media/IMG_1279.jpg","/media/IMG_1964.jpg","/media/IMG_1856.jpg","/media/IMG_1969.jpg","/media/IMG_1923.jpg","/media/IMG_1965.jpg"],
+          "description": "A nitrous oxide - ethanol liquid rocket, inspired by Halfcat Rocketry designs, intended for use as an active contols testbed. First static firing attempts were conducted May 2024. Static fires testing engine gimbal, throttling are planned for summer 2025.",
+          "image_main": "/media/JRS03298.jpg",
+          "additional_images":["/media/IMG_2157.jpg","/media/IMG_2205.jpg","/media/IMG_2242.jpg","/media/JRS03331.jpg"],
           "additional_text":"",
           "sections":[
+            ["Completed assemply of the printed aluminum combustion chamber with CNC machined injector assembly.","/media/IMG_2162.jpg"],
+            ["Fully integrated system with static engine joint, prepared for first static firing.","/media/IMG_2203.jpg"],
+            ["Initial configuration of the engine gimbal joint with a single actuator.","/media/IMG_2224.jpg"],
+            ["We made some fire.","/media/JRS03673.jpg"],
+            ["Getting to the first static fire test has been the combined effort of this small team over the course of 18 months.","/media/IMG_2262.jpg"]
           ]
         }
       }

@@ -158,7 +158,7 @@ function generateProjectPages(projects) {
             <a href = "/pages/project_archive.html" class="button-1 b1-slide-right" style="margin:0.5vw 0;">Return To Project Archive</a>
           </div>
           <div style="display:flex;flex-direction:row;width:60vw;">
-              <img src="${projects[i].page.image_main}" alt="Image Not Found" style="width:20vw;height:20vw;border-radius:0.25vw;border:0.1vw solid black;">
+              <img src="${projects[i].page.image_main}" alt="Image Not Found" style="max-width:20vw;max-height:25vw;border-radius:0.25vw;border:0.1vw solid black;">
               <div class="flexbox-1">
                 <h1>${projects[i].title}</h1>
                 <p class="subtitle" style="color:black;">${projects[i].subtitle}</p>
@@ -238,7 +238,7 @@ function generateFeaturedProjects(projects) {
 function collapsibleClick(content) {
   var element = document.getElementById(content);
   if (element.style.maxHeight == '0px') {
-    element.style.maxHeight = '100vw';
+    element.style.maxHeight = '200px';
   } else {
     element.style.maxHeight = '0px'
   }
@@ -260,3 +260,20 @@ function skillList(content, skills) {
     element.appendChild(item);
   });
 }
+
+function handleOrientationChange() {
+  const isLandscape = window.matchMedia("(orientation: landscape)").matches;
+  const container = document.querySelector('.page-section-sub');
+  
+  if (isLandscape || (window.innerWidth>800)) { 
+    //landscape styling
+    container.style.backgroundcolor = 'white';
+    console.log("landscape");
+  } else {
+    //portrait styling
+    container.style.backgroundcolor = 'black';
+    console.log("portrait");
+  }
+}
+handleOrientationChange();
+window.addEventListener('resize', handleOrientationChange)
