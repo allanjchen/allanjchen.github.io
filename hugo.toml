@@ -1,4 +1,22 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Allan J Chen'
-theme = 'hugo-profile'
+title = 'Allan Chen'
+theme = 'tailbliss'
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    weight = 1
+
+    [[menu.main]]
+    parent = "about"
+    name = "Hello World"
+    url = "/about/hello-world/"
+    weight = 2
