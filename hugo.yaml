@@ -1,6 +1,44 @@
 baseURL: 'https://example.org/'
 title: "Allan Chen"
+theme: "PaperMod"
+
+
+menu:
+  main:
+    - name: "About"
+      url: "/"
+      weight: 1
+    - name: Projects
+      url: "/"
+      weight: 2
+
 
 params:
-  author: "Allan Chen"
+  author: "Allan C"
   description: "Portfolio"
+
+  homeInfoParams:
+    Title: Hi there!
+    Content: Welcome to my portfolio...
+    imageUrl: "/IMG_1465.jpg"
+
+  socialIcons:
+    - name: "Email"
+      url: "mailto:allanchen053@gmail.com"
+    - name: "Linkedin"
+      url: "https://www.linkedin.com/in/allanjchen/"
+
+  profileMode:
+    enabled: false
+    title: "Hello!" # optional default will be site title
+    subtitle: "Welcome to my portfolio"
+    imageUrl: "/IMG_1465.jpg" # optional
+    imageTitle: "" # optional
+    imageWidth: 250 # custom size
+    imageHeight: 350 # custom size
+
+  assets:
+    favicon: /AC_favicon.ico
+
+
+
