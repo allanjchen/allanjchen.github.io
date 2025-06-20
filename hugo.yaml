@@ -1,0 +1,7 @@
+baseURL: 'https://example.org/'
+title: "Allan Chen"
+theme : PaperMod
+
+params:
+  author: "Allan Chen"
+  description: "Portfolio"
