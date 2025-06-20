@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Abouts on Allan J Chen</title>
+    <title>Abouts on Allan Chen</title>
     <link>http://localhost:1313/about/</link>
-    <description>Recent content in Abouts on Allan J Chen</description>
-    <generator>Hugo</generator>
+    <description>Recent content in Abouts on Allan Chen</description>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 17 Jun 2025 15:11:03 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,9 @@
       <link>http://localhost:1313/about/hello-world/</link>
       <pubDate>Tue, 17 Jun 2025 15:11:03 -0700</pubDate>
       <guid>http://localhost:1313/about/hello-world/</guid>
-      <description>&lt;h1 id=&#34;hello-world&#34;&gt;Hello World&lt;/h1&gt;&#xA;&lt;p&gt;This is my first pass at a website using &lt;em&gt;HUGO&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;More to come&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;hello-world&#34;&gt;Hello World&lt;/h1&gt;
+&lt;p&gt;This is my first pass at a website using &lt;em&gt;HUGO&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;More to come&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
