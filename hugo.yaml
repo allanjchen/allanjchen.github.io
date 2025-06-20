@@ -5,3 +5,5 @@ theme : PaperMod
 params:
   author: "Allan Chen"
   description: "Portfolio"
+
+  ShowShareButtons: true
