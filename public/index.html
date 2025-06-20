@@ -101,13 +101,13 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/" title="About">
-                    <span class="active">About</span>
+                <a href="http://localhost:1313/about/about-me/" title="About">
+                    <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/" title="Projects">
-                    <span class="active">Projects</span>
+                <a href="http://localhost:1313/archives/" title="Archive">
+                    <span>Archive</span>
                 </a>
             </li>
         </ul>
@@ -147,16 +147,28 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Hello World
+    <h2 class="entry-hint-parent">First Project
     </h2>
   </header>
   <div class="entry-content">
-    <p>Hello World This is my first pass at a website using HUGO
-More to come
+    <p>Hello World
+{{ $img := resources.Get “IMG_1257.jpg” }}
 </p>
   </div>
-  <footer class="entry-footer"><span title='2025-06-17 15:11:03 -0700 PDT'>June 17, 2025</span>&nbsp;·&nbsp;Allan C</footer>
-  <a class="entry-link" aria-label="post link to Hello World" href="http://localhost:1313/about/hello-world/"></a>
+  <footer class="entry-footer"><span title='2025-06-20 14:45:11 -0700 PDT'>June 20, 2025</span>&nbsp;·&nbsp;Allan C</footer>
+  <a class="entry-link" aria-label="post link to First Project" href="http://localhost:1313/posts/first-project/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Second Project
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hello World 2</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-06-20 14:45:11 -0700 PDT'>June 20, 2025</span>&nbsp;·&nbsp;Allan C</footer>
+  <a class="entry-link" aria-label="post link to Second Project" href="http://localhost:1313/posts/second-project/"></a>
 </article>
     </main>
     

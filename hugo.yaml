@@ -6,10 +6,10 @@ theme: "PaperMod"
 menu:
   main:
     - name: "About"
-      url: "/"
+      url: "/about/about-me/"
       weight: 1
-    - name: Projects
-      url: "/"
+    - name: Archive
+      url: "/archives/"
       weight: 2
 
 
