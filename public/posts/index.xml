@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Allan Chen</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thrust Vectoring Liquid Rocket</title>
@@ -86,12 +86,15 @@
     <item>
       <title>Spacecraft Design Project</title>
       <link>http://localhost:1313/posts/spacecraft-design-project/</link>
-      <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/spacecraft-design-project/</guid>
       <description>&lt;figure&gt;
     &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/image.png&#34;
          alt=&#34;Image Not Found&#34;/&gt; 
-&lt;/figure&gt;</description>
+&lt;/figure&gt;
+
+&lt;p&gt;During UCLA’s MAE161C – Spacecraft Design course, our team was challenged with developing a conceptual sample return mission to Saturn’s moon Enceladus. Working in a group of 8–10 students, we divided responsibilities across high-level mission planning and subsystem design to produce a comprehensive first-pass spacecraft concept that met specified mission requirements.&lt;/p&gt;
+&lt;p&gt;As the structures engineer, I was responsible for designing the spacecraft’s primary structural framework, developing a detailed CAD model, and performing preliminary structural analysis to ensure the vehicle could withstand anticipated launch loads.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction To Drones</title>
