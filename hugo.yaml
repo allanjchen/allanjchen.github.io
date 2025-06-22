@@ -1,7 +1,7 @@
 baseURL: 'https://example.org/'
 title: "Allan Chen"
 theme: "PaperMod"
-
+DateFormat: "January 1, 2006"
 
 menu:
   main:
@@ -15,10 +15,8 @@ menu:
       url: /contact/
       weight: 3
     - name: Resume
-      url: https://allanjchen.github.io/files/Resume-Spring-25.pdf
+      url: /files/Resume-Spring-25.pdf
       weight: 4
-      params:
-        external: true
 
 
 params:
@@ -57,6 +55,10 @@ params:
     favicon: /AC_favicon.ico
 
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 
 

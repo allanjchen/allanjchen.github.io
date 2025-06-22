@@ -4,5 +4,9 @@ title: 'Contact Me'
 url: "/contact/"
 hidemeta: true
 ShowPostNavLinks: false
+hidden: true
 ---
 
+Email: allanchen053@gmail.com
+
+Linkedin: www.linkedin.com/in/allanjchen/

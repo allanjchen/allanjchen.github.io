@@ -9,19 +9,30 @@
     <lastBuildDate>Tue, 17 Jun 2025 15:11:03 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About Me</title>
-      <link>http://localhost:1313/about/about-me/</link>
-      <pubDate>Tue, 17 Jun 2025 15:11:03 -0700</pubDate>
-      <guid>http://localhost:1313/about/about-me/</guid>
-      <description>&lt;h2 id=&#34;hey-there&#34;&gt;Hey There!&lt;/h2&gt;
-&lt;p&gt;My name is&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Contact Me</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Tue, 17 Jun 2025 15:11:03 -0700</pubDate>
       <guid>http://localhost:1313/contact/</guid>
-      <description></description>
+      <description>&lt;p&gt;Email: &lt;a href=&#34;mailto:allanchen053@gmail.com&#34;&gt;allanchen053@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Linkedin: &lt;a href=&#34;https://www.linkedin.com/in/allanjchen/&#34;&gt;www.linkedin.com/in/allanjchen/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/about/about-me/</link>
+      <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/about-me/</guid>
+      <description>&lt;h2 id=&#34;hey-there&#34;&gt;Hey There!&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m &lt;strong&gt;Allan&lt;/strong&gt;, an aspiring engineer with experience working on rocket propulsion systems, basic robotics, and various small engineering projects. I&amp;rsquo;m currently a 4th year undergraduate studying Aerospace Engineering at &lt;strong&gt;UCLA&lt;/strong&gt;. I built this website to showcase the projects i&amp;rsquo;ve worked on.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_1465.JPG&#34;
+         alt=&#34;Image Not Found&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;I&amp;rsquo;ve always been fascinated by the inner workings of machines.
+In middle school, I started fixing and flipping bicycles.
+In high school, I bought my first car, a 1997 Honda Civic, with money from my first job.
+I did maintenance, repairs, and modifications with friends on weekends.
+Now, as an engineering student in university, I continue to work on exciting projects you can learn about on this site!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

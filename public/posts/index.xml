@@ -6,21 +6,182 @@
     <description>Recent content in Posts on Allan Chen</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Jun 2025 14:45:11 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First Project</title>
-      <link>http://localhost:1313/posts/first-project/</link>
-      <pubDate>Fri, 20 Jun 2025 14:45:11 -0700</pubDate>
-      <guid>http://localhost:1313/posts/first-project/</guid>
-      <description>&lt;p&gt;Hello World&lt;/p&gt;</description>
+      <title>Thrust Vectoring Liquid Rocket</title>
+      <link>http://localhost:1313/posts/thrust-vectoring-liquid-rocket/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/thrust-vectoring-liquid-rocket/</guid>
+      <description>&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/JRS03298.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;A nitrous oxide - ethanol liquid rocket, inspired by Halfcat Rocketry designs, intended for use as an active contols testbed. First static firing attempts were conducted May 2024. Static fires testing engine gimbal, throttling are planned for summer 2025.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_2162.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            Completed assemply of the printed aluminum combustion chamber with CNC machined injector assembly
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_2203.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            Fully integrated system with static engine joint, prepared for first static firing.
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_2224.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            Initial configuration of the engine gimbal joint with a single actuator.
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/JRS03673.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            First Static Fire Attempts
+        &lt;/figcaption&gt;
+&lt;/figure&gt;</description>
     </item>
     <item>
-      <title>Second Project</title>
-      <link>http://localhost:1313/posts/second-project/</link>
-      <pubDate>Fri, 20 Jun 2025 14:45:11 -0700</pubDate>
-      <guid>http://localhost:1313/posts/second-project/</guid>
-      <description>&lt;h1 id=&#34;hello-world-2&#34;&gt;Hello World 2&lt;/h1&gt;</description>
+      <title>Hybrid Rocket Fluid System</title>
+      <link>http://localhost:1313/posts/hybrid-rocket-fluids/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hybrid-rocket-fluids/</guid>
+      <description>&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_1261.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;Served as feed system lead engineer on the hybrid rocket &lt;strong&gt;Casanova&lt;/strong&gt;, leading a team of 5 student engineers in the design, manufacturing, and testing of the rocket&amp;rsquo;s nitrous feed system.&lt;/p&gt;
+&lt;video width=&#34;640&#34; height=&#34;360&#34; controls&gt;
+  &lt;source src=&#34;http://localhost:1313/videos/-5675547926268485369coldflow_ - Trim.MP4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_1166.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            Machined PRessure Vessel Endcaps
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_1240.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            The Finished Product
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_1247.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            Pressure Vessel Assembly
+        &lt;/figcaption&gt;
+&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>Spacecraft Design Project</title>
+      <link>http://localhost:1313/posts/spacecraft-design-project/</link>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/spacecraft-design-project/</guid>
+      <description>&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/image.png&#34;
+         alt=&#34;Image Not Found&#34;/&gt; 
+&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>Introduction To Drones</title>
+      <link>http://localhost:1313/posts/first-drone/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/first-drone/</guid>
+      <description>&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_1902.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;First two drone projects, building a kit drone with a small team and making improvements implemented in our own design.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_1901.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            Completed kit *Basicopter*
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/B7FF0A95-006D-4AFB-8D91-21C3274B64CA.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            Final Project CAD Model
+        &lt;/figcaption&gt;
+&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>High Powered Rocket</title>
+      <link>http://localhost:1313/posts/high-powered-rocket/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/high-powered-rocket/</guid>
+      <description>&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_1954.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;Designed and flown during ENGR 96R course at UCLA. Using an AEROTECH 29MM MOTOR - G80T-13, the rocket flew to ~2000m and recovered successfully.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/68979697058__DC84F3AC-52D8-43DC-9CB9-C617D1F158B8.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            3D Printed Components
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_0758.JPG&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            Successfully Recovered
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/68921239397__8D63FC69-B419-435C-A2DF-FC8DA6695DB1.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            Fiberglass Body Tube Layup
+        &lt;/figcaption&gt;
+&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>3D Printed Rocket</title>
+      <link>http://localhost:1313/posts/3d-printed-rocket/</link>
+      <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/3d-printed-rocket/</guid>
+      <description>&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/3DPR-Rockets.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;This is the first rocket I worked on, designed and flown during the E96R - Design of Rockets course at UCLA.
+Designed using SOLIDWORKS and OpenRocket.&amp;quot;&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/68664611944__EF93BD2B-19C1-4565-B933-BAFCC89B578C.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            Intial OpenRocket Model
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/68737092366__A0D16472-BBA2-4AF0-9B82-FC899A011AD8.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            First Iteration
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/68722797229__025091AD-2FA9-48C0-8755-9A891C0B3FE6.jpg&#34;
+         alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
+            First CAD Model
+        &lt;/figcaption&gt;
+&lt;/figure&gt;</description>
     </item>
   </channel>
 </rss>
