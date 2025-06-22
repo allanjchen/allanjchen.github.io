@@ -12,7 +12,7 @@ hidden: true
 I'm **Allan**, an aspiring engineer with experience working on rocket propulsion systems, basic robotics, and various small engineering projects. I'm currently a 4th year undergraduate studying Aerospace Engineering at **UCLA**. I built this website to showcase the projects i've worked on.
 
 
-{{< figure src="/images/IMG_1465.jpg" title="" alt="Image Not Found" >}}
+{{< figure src="/images/IMG_1465.JPG" title="" alt="Image Not Found" >}}
 
 I've always been fascinated by the inner workings of machines. 
 In middle school, I started fixing and flipping bicycles. 

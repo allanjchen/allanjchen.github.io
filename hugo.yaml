@@ -15,7 +15,7 @@ menu:
       url: /contact/
       weight: 3
     - name: Resume
-      url: /files/Resume-Spring-25.pdf/
+      url: /files/Resume-Spring-25.pdf
       weight: 4
 
 
