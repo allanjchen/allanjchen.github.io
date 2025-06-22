@@ -5,6 +5,3 @@ title = 'First Project'
 
 Hello World
 
-
-{{ $image := resources.Get "IMG_1257.jpg" }}
-

@@ -5,22 +5,38 @@ theme: "PaperMod"
 
 menu:
   main:
-    - name: "About"
+    - name: About
       url: "/about/about-me/"
       weight: 1
     - name: Archive
-      url: "/archives/"
+      url: "/archive/"
       weight: 2
+    - name: Contact
+      url: /contact/
+      weight: 3
+    - name: Resume
+      url: https://allanjchen.github.io/files/Resume-Spring-25.pdf
+      weight: 4
+      params:
+        external: true
 
 
 params:
   author: "Allan C"
   description: "Portfolio"
+  ShowPostNavLinks: true
+  defaultTheme: auto
 
   homeInfoParams:
     Title: Hi there!
-    Content: Welcome to my portfolio...
-    imageUrl: "/IMG_1465.jpg"
+    Content: |
+      I'm Allan, an engineering student with a passion for building systems that blend precision, creativity, and real-world impact.
+      This site showcases a selection of projects I've worked on.
+      
+      Thanks for stopping by!
+
+      
+    
 
   socialIcons:
     - name: "Email"
@@ -39,6 +55,9 @@ params:
 
   assets:
     favicon: /AC_favicon.ico
+
+
+
 
 
 

@@ -13,8 +13,7 @@
       <link>http://localhost:1313/posts/first-project/</link>
       <pubDate>Fri, 20 Jun 2025 14:45:11 -0700</pubDate>
       <guid>http://localhost:1313/posts/first-project/</guid>
-      <description>&lt;p&gt;Hello World&lt;/p&gt;
-&lt;p&gt;{{ $img := resources.Get &amp;ldquo;IMG_1257.jpg&amp;rdquo; }}&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hello World&lt;/p&gt;</description>
     </item>
     <item>
       <title>Second Project</title>
@@ -30,6 +29,13 @@
       <guid>http://localhost:1313/about/about-me/</guid>
       <description>&lt;h2 id=&#34;hey-there&#34;&gt;Hey There!&lt;/h2&gt;
 &lt;p&gt;My name is&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact Me</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Tue, 17 Jun 2025 15:11:03 -0700</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
