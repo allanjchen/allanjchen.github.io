@@ -1,4 +1,4 @@
-baseURL: 'https://example.org/'
+baseURL: 'https://allanjchen.github.io/'
 title: "Allan Chen"
 theme: "PaperMod"
 DateFormat: "January 1, 2006"
@@ -15,7 +15,7 @@ menu:
       url: /contact/
       weight: 3
     - name: Resume
-      url: /files/Resume-Spring-25.pdf
+      url: files/Resume-Spring-25.pdf
       weight: 4
 
 
