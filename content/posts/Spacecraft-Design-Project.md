@@ -9,6 +9,6 @@ During UCLA’s MAE161C – Spacecraft Design course, our team was challenged wi
 
 As the structures engineer, I was responsible for designing the spacecraft’s primary structural framework, developing a detailed CAD model, and performing preliminary structural analysis to ensure the vehicle could withstand anticipated launch loads.
 
-{{< figure src="/images/image (14).png" title="" alt="Image Not Found" >}}
+{{< figure src="/images/image (14).png" title="Launch configuration integrated to launch vehicle" alt="Image Not Found" >}}
 
-{{< figure src="/images/image (4).png" title="" alt="Image Not Found" >}}
+{{< figure src="/images/image (4).png" title="Detailed view with transparent multi-layer insulation" alt="Image Not Found" >}}

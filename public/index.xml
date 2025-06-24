@@ -65,7 +65,7 @@
 &lt;figure&gt;
     &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_1166.jpg&#34;
          alt=&#34;Image Not Found&#34;/&gt; &lt;figcaption&gt;
-            Machined PRessure Vessel Endcaps
+            Machined Pressure Vessel Endcaps
         &lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -108,6 +108,14 @@ In middle school, I started fixing and flipping bicycles.
 In high school, I bought my first car, a 1997 Honda Civic, with money from my first job.
 I did maintenance, repairs, and modifications with friends on weekends.
 Now, as an engineering student in university, I continue to work on exciting projects you can learn about on this site!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Airfoil CFD Project</title>
+      <link>http://localhost:1313/posts/airfoil-cfd/</link>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/airfoil-cfd/</guid>
+      <description>&lt;p&gt;As part of UCLA&amp;rsquo;s MAE150B Aerodynamics course, students completed a final project focused on analyzing the aerodynamic characteristics of various geometries using COMSOL Multiphysics&amp;rsquo; Computational Fluid Dynamics (CFD) module. The objective was to investigate how shape and flow conditions influence key performance metrics such as the lift coefficient (C&lt;sub&gt;L&lt;/sub&gt;) and drag coefficient (C&lt;sub&gt;D&lt;/sub&gt;).&lt;/p&gt;
+&lt;p&gt;Students analyzed a set of provided geometries—including a non-lifting cylinder, a symmetric NACA 0010 airfoil, a cambered NACA 4410 airfoil, and a finite wing based on the NACA 4410 profile—using steady, incompressible CFD simulations in COMSOL. The process involved mesh refinement, selection of appropriate boundary conditions, solver configuration, and post-processing to extract aerodynamic force coefficients.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Spacecraft Design Project</title>

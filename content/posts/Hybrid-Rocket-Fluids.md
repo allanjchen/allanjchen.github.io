@@ -13,7 +13,7 @@ Served as feed system lead engineer on the hybrid rocket **Casanova**, leading a
   Your browser does not support the video tag.
 </video>
 
-{{< figure src="/images/IMG_1166.jpg" title="Machined PRessure Vessel Endcaps" alt="Image Not Found" >}}
+{{< figure src="/images/IMG_1166.jpg" title="Machined Pressure Vessel Endcaps" alt="Image Not Found" >}}
 
 {{< figure src="/images/IMG_1240.jpg" title="The Finished Product" alt="Image Not Found" >}}
 
